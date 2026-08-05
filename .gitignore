@@ -1,0 +1,15 @@
+# OpenCode agent 状态目录
+.omo/
+.codegraph/
+.opencode/
+
+# 真题原文（原始素材，仅本地使用，不发布）
+raw/
+
+# IDE
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.log

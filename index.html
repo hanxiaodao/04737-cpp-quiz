@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>C++真题刷题</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">C++真题刷题</div>
+    <div class="topbar-right">
+      <span class="muted">本地进度</span>
+    </div>
+  </header>
+
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <nav class="tabbar">
+    <a href="#/" data-tab="home">首页</a>
+    <a href="#/list?type=all" data-tab="list">题库</a>
+    <a href="#/list?type=wrong" data-tab="wrong">错题</a>
+    <a href="#/list?type=fav" data-tab="fav">收藏</a>
+    <a href="#/settings" data-tab="settings">设置</a>
+  </nav>
+
+  <script src="assets/idb.js"></script>
+  <script src="assets/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>

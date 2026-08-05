@@ -1,0 +1,9 @@
+{
+  "name": "C++真题刷题",
+  "short_name": "C++刷题",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#2563eb",
+  "icons": []
+}

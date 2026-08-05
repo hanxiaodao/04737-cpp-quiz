@@ -1,0 +1,690 @@
+{
+  "version": 1,
+  "paper": "2024-10",
+  "questions": [
+    {
+      "id": "202410-1",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于C++的描述，正确的是",
+      "options": {
+        "A": "不支持泛型编程",
+        "B": "不支持过程化编程",
+        "C": "不支持面向对象编程",
+        "D": "支持结构化程序设计"
+      },
+      "answer": "D",
+      "analysis": "C++支持过程化、面向对象、泛型编程，也支持结构化程序设计。"
+    },
+    {
+      "id": "202410-2",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于C++动态内存分配机制的描述，正确的是",
+      "options": {
+        "A": "程序编译期间分配内存",
+        "B": "程序运行期间分配内存",
+        "C": "程序编译时即可确定占用内存的大小",
+        "D": "程序运行时也不能确定占用内存的大小"
+      },
+      "answer": "B",
+      "analysis": "动态内存分配发生在运行期间。"
+    },
+    {
+      "id": "202410-3",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "在面向对象的程序设计方法中，将同一类事物的共同特点概括出来的过程称为",
+      "options": {
+        "A": "抽象",
+        "B": "封装",
+        "C": "继承",
+        "D": "多态"
+      },
+      "answer": "A",
+      "analysis": "抽取共同特征是抽象。"
+    },
+    {
+      "id": "202410-4",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于类和对象的说法，正确的是",
+      "options": {
+        "A": "类的对象不占用内存空间",
+        "B": "类的成员函数必须由类来调用",
+        "C": "类的对象具有成员函数的副本",
+        "D": "编译器为每个对象的成员变量分配内存"
+      },
+      "answer": "D",
+      "analysis": "对象占用内存，编译器为对象成员变量分配内存。"
+    },
+    {
+      "id": "202410-5",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "若一个类的构造函数为T(int i=20,int j=10){y=i; m=j;}，则执行语句T d(24);后，d.y和d.m的值分别是",
+      "options": {
+        "A": "20和0",
+        "B": "20和10",
+        "C": "24和0",
+        "D": "24和10"
+      },
+      "answer": "D",
+      "analysis": "第一个参数为24，第二个参数使用默认值10。"
+    },
+    {
+      "id": "202410-6",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "在函数中声明的静态变量",
+      "options": {
+        "A": "只执行一次初始化",
+        "B": "不能存储在全局数据区",
+        "C": "在程序的所有位置都可见",
+        "D": "函数执行结束时释放占用的空间"
+      },
+      "answer": "A",
+      "analysis": "静态局部变量只初始化一次，生命周期到程序结束。"
+    },
+    {
+      "id": "202410-7",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于运算符重载的说法，不正确的是",
+      "options": {
+        "A": "解决对象之间的运算问题",
+        "B": "用于类运算的运算符无须重载",
+        "C": "其实质是编写以运算符为名称的函数",
+        "D": "使得C++中的运算符能够用来操作对象"
+      },
+      "answer": "B",
+      "analysis": "许多运算符用于类对象时需要重载。"
+    },
+    {
+      "id": "202410-8",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "若表达式++a中的++是作为成员函数重载的运算符，则++a可被编译器解释为",
+      "options": {
+        "A": "operator++(a)",
+        "B": "a.operator++(1)",
+        "C": "a.operator++()",
+        "D": "operator++(a,1)"
+      },
+      "answer": "C",
+      "analysis": "前置++作为成员函数重载时无参数。"
+    },
+    {
+      "id": "202410-9",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "若有类的定义class DerivedClass: public BaseClass{int v;};，则表述正确的是",
+      "options": {
+        "A": "public是私有继承",
+        "B": "v是私有成员变量",
+        "C": "继承类是BaseClass",
+        "D": "基类是DerivedClass"
+      },
+      "answer": "B",
+      "analysis": "class中默认访问权限为private，因此v是私有成员。"
+    },
+    {
+      "id": "202410-10",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "公有派生情况下，正确的兼容规则是",
+      "options": {
+        "A": "基类对象赋值给派生类对象",
+        "B": "基类对象初始化派生类引用",
+        "C": "基类对象的地址赋值给派生类指针",
+        "D": "派生类对象的地址赋值给基类指针"
+      },
+      "answer": "D",
+      "analysis": "派生类对象可向上转换为基类指针。"
+    },
+    {
+      "id": "202410-11",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "当基类指针指向其公有派生的派生类对象时，正确的说法是",
+      "options": {
+        "A": "会发生语法错误",
+        "B": "必须进行强制类型转换",
+        "C": "能调用派生类的全部成员函数",
+        "D": "不能调用基类中没有的成员函数"
+      },
+      "answer": "D",
+      "analysis": "基类指针只能调用基类中声明的成员。"
+    },
+    {
+      "id": "202410-12",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "类Car是类Traffic的公有派生类，两个类中都定义了虚函数vc()，p是一个指向类Traffic对象的指针，p->Traffic::vc()将",
+      "options": {
+        "A": "调用两个类中的函数",
+        "B": "调用类Car中的函数vc()",
+        "C": "调用类Traffic中的函数vc()",
+        "D": "根据p所指的对象类型确定类"
+      },
+      "answer": "C",
+      "analysis": "使用类名限定调用基类版本。"
+    },
+    {
+      "id": "202410-13",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于纯虚函数与抽象类的描述，不正确的是",
+      "options": {
+        "A": "抽象类是指具有纯虚函数的类",
+        "B": "纯虚函数是一种特殊的函数，它允许没有具体的实现",
+        "C": "抽象类只能作为基类来使用，其纯虚函数的实现由派生类给出",
+        "D": "一个基类的说明中有纯虚函数，该基类的派生类一定不再是抽象类"
+      },
+      "answer": "D",
+      "analysis": "若派生类未实现纯虚函数，派生类仍是抽象类。"
+    },
+    {
+      "id": "202410-14",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "若类AbsClass为抽象类，则正确的语句是",
+      "options": {
+        "A": "AbsClass p;",
+        "B": "AbsClass *p;",
+        "C": "AbsClass p(int);",
+        "D": "int p(AbsClass);"
+      },
+      "answer": "B",
+      "analysis": "抽象类不能创建对象，但可以定义指针。"
+    },
+    {
+      "id": "202410-15",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于C++输入/输出的描述，正确的是",
+      "options": {
+        "A": "使用输入/输出语句",
+        "B": "输入/输出通过流完成",
+        "C": "istream是文件输入流类",
+        "D": "ofstream是通用输入流类"
+      },
+      "answer": "B",
+      "analysis": "C++输入输出通过流完成。"
+    },
+    {
+      "id": "202410-16",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于循环语句while(cin>>n){cnt++;}的解释，正确的是",
+      "options": {
+        "A": "<Ctrl+Z>退出循环",
+        "B": "完成一批数据的输出",
+        "C": "输入回车结束数据输入",
+        "D": "计算输入数据的累加和"
+      },
+      "answer": "A",
+      "analysis": "输入结束符使流进入结束状态，从而退出循环。"
+    },
+    {
+      "id": "202410-17",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于文件的基本操作，描述正确的是",
+      "options": {
+        "A": "写文件是将文件中的数据输入到内存中",
+        "B": "读文件是将内存中的数据输出到文件中",
+        "C": "使用一个文件必须包含2个步骤：打开-操作",
+        "D": "使用流类完成打开、读、写、关闭等文件操作"
+      },
+      "answer": "D",
+      "analysis": "文件操作通常通过流类完成打开、读写、关闭。"
+    },
+    {
+      "id": "202410-18",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于ifstream outFile(\"d:\\c2024\\DataFile\", ios::out|ios::binary);参数的解释可以是",
+      "options": {
+        "A": "第1个参数是文件的打开模式",
+        "B": "第2个参数是文件的绝对路径",
+        "C": "ios::out表示以写方式打开文件",
+        "D": "ios::binary表示用文本模式打开文件"
+      },
+      "answer": "C",
+      "analysis": "ios::out表示输出/写方式，ios::binary表示二进制模式。"
+    },
+    {
+      "id": "202410-19",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "函数和函数模板名字相同时，先调用的是",
+      "options": {
+        "A": "参数完全匹配的模板函数",
+        "B": "参数完全匹配的普通函数",
+        "C": "实参经过自动类型转换后能够匹配的模板函数",
+        "D": "形参经过自动类型转换后能够匹配的普通函数"
+      },
+      "answer": "B",
+      "analysis": "优先调用参数完全匹配的普通函数。"
+    },
+    {
+      "id": "202410-20",
+      "paper": "2024-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "类模板template<class T>class X{...}; 若使函数f(X<int>&)成为X<int>模板类的友元函数，则其说明可以是",
+      "options": {
+        "A": "friend void f();",
+        "B": "friend void C(T);",
+        "C": "friend void A::f();",
+        "D": "friend void f(X<T>&);"
+      },
+      "answer": "D",
+      "analysis": "友元函数声明为f(X<T>&)。"
+    },
+    {
+      "id": "202410-21",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "一个C++源文件中包含3个函数main()、f1()和f2()函数，在f2()函数中可以非递归调用函数____",
+      "answer": [
+        "f1()"
+      ],
+      "analysis": "f2中非递归调用通常指调用其他函数f1()。"
+    },
+    {
+      "id": "202410-22",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "语句____=&ss;使用指针sp访问类Student的对象ss",
+      "answer": [
+        "Student *sp"
+      ],
+      "analysis": "需要先定义Student类型指针sp。"
+    },
+    {
+      "id": "202410-23",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "成员函数定义在类体外的格式是返回值类型____成员函数名(参数列表){...}",
+      "answer": [
+        "类名::"
+      ],
+      "analysis": "类外定义成员函数需要作用域解析符。"
+    },
+    {
+      "id": "202410-24",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "语句myDate::~myDate(){cout<<\"...\"<<endl;}为类myDate添加____函数",
+      "answer": [
+        "析构"
+      ],
+      "analysis": "~myDate是析构函数。"
+    },
+    {
+      "id": "202410-25",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "使用new运算符创建的变量直到用____运算符或程序结束时，变量生存期结束",
+      "answer": [
+        "delete"
+      ],
+      "analysis": "new分配的内存用delete释放。"
+    },
+    {
+      "id": "202410-26",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "即使两个操作数的类型不匹配也要完成赋值操作，就需要对=进行____",
+      "answer": [
+        "重载"
+      ],
+      "analysis": "可通过重载赋值运算符完成特定赋值逻辑。"
+    },
+    {
+      "id": "202410-27",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "派生类继承了基类中除____和析构函数之外的全部成员函数",
+      "answer": [
+        "构造函数"
+      ],
+      "analysis": "构造函数和析构函数不能被继承。"
+    },
+    {
+      "id": "202410-28",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "使用____能够增强程序的可扩充性，也能起到精简代码的作用",
+      "answer": [
+        "虚函数"
+      ],
+      "analysis": "虚函数支持动态多态，有利于扩展和精简代码。"
+    },
+    {
+      "id": "202410-29",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "语句cout<<scientific<<setprecision(4)<<12345.6789;输出的数据，使用____计数法且保留小数点后4位",
+      "answer": [
+        "科学"
+      ],
+      "analysis": "scientific表示科学计数法。"
+    },
+    {
+      "id": "202410-30",
+      "paper": "2024-10",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "类模板使得类中的某些成员变量、某些成员函数的返回值及局部变量能取____",
+      "answer": [
+        "不同类型"
+      ],
+      "analysis": "类模板通过类型参数支持不同类型。"
+    },
+    {
+      "id": "202410-31",
+      "paper": "2024-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "以下程序输出圆面积的数值12.56，请补全：class Circle{ public: int r; double s; ____ return s=3.14*r*r; } }; int main(){ Circle c; c.r=2; ____ cout<<c.s<<endl; }",
+      "answer": [
+        "double area(){",
+        "c.area();"
+      ],
+      "analysis": "第一空定义求面积函数，第二空调用该函数。"
+    },
+    {
+      "id": "202410-32",
+      "paper": "2024-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "以下程序输出数值2024，请补全：class INTEGER{ public: INTEGER(int a){ ____ } private: int a; ____ (const INTEGER& obj); }; void Print(const INTEGER &obj){ cout<<obj.a; } int main(){ INTEGER obj(2024); Print(obj); }",
+      "answer": [
+        "this->a=a;",
+        "friend void Print"
+      ],
+      "analysis": "第一空解决参数与成员同名问题，第二空声明友元函数访问私有成员。"
+    },
+    {
+      "id": "202410-33",
+      "paper": "2024-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "以下程序输出C++等级成绩：优秀，请补全：class Base{ public: Base(const char *na){ strcpy(s,na); } char s[80]; }; ____ { public: Derived(const char *nm):Base(nm){} void show(); }; void Derived::show(){ cout<<____<<endl; } int main(){ Derived b1(\"优秀\"); b1.show(); }",
+      "answer": [
+        "class Derived : public Base",
+        "\"C++等级成绩：\" << s"
+      ],
+      "analysis": "第一空定义Derived公有继承Base，第二空输出前缀和继承来的s。"
+    },
+    {
+      "id": "202410-34",
+      "paper": "2024-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "以下程序输出程序设计100分，请补全：class A{ public: int i; virtual void f1(){ cout<<\"C++\"; } ____ { cout<<\"100分\"; } }; class B: public A{ int j; void f1(){ cout<<\"程序设计\"; } }; int main(){ A *a; B b; ____; a->f1(); a->f2(); }",
+      "answer": [
+        "void f2()",
+        "a=&b"
+      ],
+      "analysis": "第一空定义f2，第二空让基类指针指向派生类对象。"
+    },
+    {
+      "id": "202410-35",
+      "paper": "2024-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "以下程序输出相等不相等，请补全：____ class Sample{ T n; public: Sample(T i){ n=i; } int operator==(Sample &); }; template<class T> int Sample<T>::operator==(Sample &s){ if(n==s.n) return 1; else return 0; } int main(){ ____ , s2(1); cout<<(s1==s2?\"相等\":\"不相等\"); Sample<double> s3(2.4), s4(3.5); cout<<(s3==s4?\"相等\":\"不相等\"); }",
+      "answer": [
+        "template<class T>",
+        "Sample<int> s1(1)"
+      ],
+      "analysis": "第一空是模板声明，第二空定义int类型对象s1。"
+    },
+    {
+      "id": "202410-36",
+      "paper": "2024-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "1 2 1\n0 0 0",
+      "analysis": "p指向a，setzero通过引用修改a和b。",
+      "codeLines": [
+        "void setzero(int &a){",
+        "    a=0;",
+        "}",
+        "int main(){",
+        "    int a=1,b=2;",
+        "    const int *p=&a;",
+        "    cout<<a<<' '<<b<<' '<<*p<<endl;",
+        "    setzero(a);",
+        "    setzero(b);",
+        "    cout<<a<<' '<<b<<' '<<*p<<endl;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202410-37",
+      "paper": "2024-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "1 1\n2 2\nThe num=2",
+      "analysis": "num是静态成员，每次构造加1。",
+      "codeLines": [
+        "class A{ public: static int num;",
+        "    double x,y;",
+        "    A(){",
+        "        x=0;",
+        "        y=0;",
+        "        num++;",
+        "    }",
+        "    A(double a,double b){",
+        "        x=a;",
+        "        y=b;",
+        "        num++;",
+        "    }",
+        "    void Print(){",
+        "        cout<<\"The num=\"<<num<<endl;",
+        "    }",
+        "};",
+        "int A::num=0;",
+        "int main(){",
+        "    A obj(1,2),*p;",
+        "    cout<<A::num<<' '<<obj.num<<endl;",
+        "    p=new A(3.4,5.6);",
+        "    cout<<A::num<<' '<<p->num<<endl;",
+        "    obj.Print();",
+        "}"
+      ]
+    },
+    {
+      "id": "202410-38",
+      "paper": "2024-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "输出1：10086\n输出2：88",
+      "analysis": "get返回当前值后自增；第一次10000+100-14=10086，第二次101+1-14=88。",
+      "codeLines": [
+        "class A{ public: A(int a=100){",
+        "        m_a=a;",
+        "    }",
+        "    int get(){",
+        "        return m_a++;",
+        "    }",
+        "    private: int m_a;",
+        "};",
+        "int operator+(A &a1,A &a2){",
+        "    return a1.get()+a2.get()-14;",
+        "}",
+        "int main(){",
+        "    A a1(10000), a2, a3=1;",
+        "    cout<<\"输出1：\"<<a1+a2<<endl;",
+        "    cout<<\"输出2：\"<<a2+a3<<endl;",
+        "}"
+      ]
+    },
+    {
+      "id": "202410-39",
+      "paper": "2024-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "A::f1\nC::f2\nC::f1",
+      "analysis": "A中f1不是虚函数，pa->f1静态绑定到A；f1和f2的虚函数调用根据对象类型C。",
+      "codeLines": [
+        "class A{ public: void f1(){",
+        "        cout<<\"A::f1\"<<endl;",
+        "    }",
+        "    virtual void f2(){",
+        "        cout<<\"A::f2\"<<endl;",
+        "    }",
+        "};",
+        "class B: public A{ public: virtual void f1(){",
+        "        cout<<\"B::f1\"<<endl;",
+        "    }",
+        "    virtual void f2(){",
+        "        cout<<\"B::f2\"<<endl;",
+        "    }",
+        "};",
+        "class C: public B{ public: virtual void f1(){",
+        "        cout<<\"C::f1\"<<endl;",
+        "    }",
+        "    virtual void f2(){",
+        "        cout<<\"C::f2\"<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    C obj;",
+        "    A *pa=&obj;",
+        "    B *pb=&obj;",
+        "    pa->f1();",
+        "    pa->f2();",
+        "    pb->f1();",
+        "}"
+      ]
+    },
+    {
+      "id": "202410-40",
+      "paper": "2024-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "x=    123.46\nstr=**123 Hi\ncnt='+3",
+      "analysis": "setw控制域宽，setprecision(5)输出123.46；字符串中有3个数字。",
+      "codeLines": [
+        "double x=123.456;",
+        "cout<<\"x=\"<<setw(10)<<setprecision(5)<<x<<endl;",
+        "char str[20]=\"123 Hi\";",
+        "cout<<\"str=\"<<setfill('*')<<setw(8)<<str<<endl;",
+        "int i=0,cnt=0;",
+        "while(str[i]){",
+        "    if(str[i]>='0'&&str[i]<='9') cnt++;",
+        "    i++;",
+        "}",
+        "cout.setf(ios::showpos);",
+        "cout<<\"cnt='\"<<cnt;"
+      ]
+    },
+    {
+      "id": "202410-41",
+      "paper": "2024-10",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "读取c盘根目录score.txt文件中的数据(数据为学生的姓名和总成绩)，在屏幕上显示这些排序前的数据，按学生成绩由高到低的顺序排序后，将结果存放在当前文件夹名为out.txt的文件中。",
+      "answer": "#include<iostream>\n#include<fstream>\n#include<vector>\n#include<algorithm>\nusing namespace std;\nstruct Stu{ string name; int score; };\nint main(){\n ifstream in(\"C:/score.txt\");\n ofstream out(\"out.txt\");\n vector<Stu> v; string name; int score;\n while(in>>name>>score){ v.push_back({name,score}); cout<<name<<' '<<score<<endl; }\n sort(v.begin(),v.end(),[](const Stu&a,const Stu&b){ return a.score>b.score; });\n for(auto &s:v) out<<s.name<<' '<<s.score<<endl;\n return 0;\n}",
+      "analysis": "读取文件到容器，排序后写回文件。",
+      "referenceLines": [
+        "#include<iostream>",
+        "#include<fstream>",
+        "#include<vector>",
+        "#include<algorithm>",
+        "using namespace std;",
+        "struct Stu{ string name; int score; };",
+        "bool cmp(const Stu &a, const Stu &b){ return a.score>b.score; }",
+        "int main(){",
+        " ifstream in(\"C:/score.txt\");",
+        " ofstream out(\"out.txt\");",
+        " vector<Stu> v; string name; int score;",
+        " while(in>>name>>score){ v.push_back(Stu{name,score}); cout<<name<<' '<<score<<endl; }",
+        " sort(v.begin(),v.end(),cmp);",
+        " for(int i=0;i<(int)v.size();i++) out<<v[i].name<<' '<<v[i].score<<endl;",
+        " return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202410-42",
+      "paper": "2024-10",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "商品类定义为基类Product，包括名称name、数量count、单价price和总价total；定义它的两个派生类，手表类Watch(增加质保年限属性)和书籍类Book(增加作者属性)；为这三个类添加构造函数完成输入，添加成员函数output()完成各自商品全部信息的输出。",
+      "answer": "#include<iostream>\n#include<string>\nusing namespace std;\nclass Product{\nprotected:\n string name; int count; double price,total;\npublic:\n Product(){ cin>>name>>count>>price; total=count*price; }\n virtual void output(){ cout<<name<<' '<<count<<' '<<price<<' '<<total<<endl; }\n};\nclass Watch: public Product{\n int warranty;\npublic:\n Watch(){ cin>>warranty; }\n void output(){ Product::output(); cout<<warranty<<endl; }\n};\nclass Book: public Product{\n string author;\npublic:\n Book(){ cin>>author; }\n void output(){ Product::output(); cout<<author<<endl; }\n};\nint main(){\n Watch w;\n Book b;\n w.output();\n b.output();\n return 0;\n}",
+      "analysis": "基类保存公共属性，派生类扩展属性并重写output。",
+      "referenceLines": [
+        "#include<iostream>",
+        "#include<string>",
+        "using namespace std;",
+        "class Product{",
+        "protected:",
+        " string name; int count; double price,total;",
+        "public:",
+        " Product(){ cin>>name>>count>>price; total=count*price; }",
+        " virtual void output(){ cout<<name<<' '<<count<<' '<<price<<' '<<total<<endl; }",
+        "};",
+        "class Watch: public Product{",
+        " int warranty;",
+        "public:",
+        " Watch(){ cin>>warranty; }",
+        " void output(){ Product::output(); cout<<warranty<<endl; }",
+        "};",
+        "class Book: public Product{",
+        " string author;",
+        "public:",
+        " Book(){ cin>>author; }",
+        " void output(){ Product::output(); cout<<author<<endl; }",
+        "};",
+        "int main(){",
+        " Watch w;",
+        " Book b;",
+        " w.output();",
+        " b.output();",
+        " return 0;",
+        "}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "version": 1,
+  "paper": "2025-10",
+  "questions": [
+    {
+      "id": "202510-1",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于C++程序设计语言的描述，正确的是",
+      "options": {
+        "A": "属于高级程序设计语言范畴",
+        "B": "可以直接操纵计算机底层硬件",
+        "C": "在扩充和完善Fortran语言的基础上得到的",
+        "D": "完全支持面向对象的开发模式，不兼容C语言"
+      },
+      "answer": "A",
+      "analysis": "C++属于高级语言，兼容C。"
+    },
+    {
+      "id": "202510-2",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "以下函数声明，正确的是",
+      "options": {
+        "A": "void f(int a=2,double b);",
+        "B": "void f(int a,double b=3.0);",
+        "C": "void f(int a=1,int b,int c=3);",
+        "D": "void f(int a=1,int b=2,int c);"
+      },
+      "answer": "B",
+      "analysis": "默认参数必须从右向左连续给出。"
+    },
+    {
+      "id": "202510-3",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "面向对象程序设计的基本特点不包括",
+      "options": {
+        "A": "抽象",
+        "B": "封装",
+        "C": "继承",
+        "D": "实例"
+      },
+      "answer": "D",
+      "analysis": "面向对象基本特点包括抽象、封装、继承、多态。"
+    },
+    {
+      "id": "202510-4",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "对类中声明的成员进行修饰时可以使用关键字",
+      "options": {
+        "A": "auto",
+        "B": "const",
+        "C": "extern",
+        "D": "register"
+      },
+      "answer": "B",
+      "analysis": "const可修饰类成员。"
+    },
+    {
+      "id": "202510-5",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于析构函数特点的描述，正确的是",
+      "options": {
+        "A": "析构函数没有参数",
+        "B": "析构函数返回类型为int",
+        "C": "用户必须定义类的析构函数",
+        "D": "析构函数可以设置默认参数"
+      },
+      "answer": "A",
+      "analysis": "析构函数无参数、无返回类型。"
+    },
+    {
+      "id": "202510-6",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "已知类A的三个成员函数中，f1()为静态函数，f2()和f3()为非静态函数，则",
+      "options": {
+        "A": "在f1()中能直接调用f2()",
+        "B": "在f2()中能直接调用f3()",
+        "C": "在f3()中不能直接调用f1()",
+        "D": "在f3()中不能直接调用f2()"
+      },
+      "answer": "B",
+      "analysis": "非静态函数可直接调用非静态函数。"
+    },
+    {
+      "id": "202510-7",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于变量的生存期和作用域的描述，正确的是",
+      "options": {
+        "A": "全局变量是程序中定义在main函数之外的浮点型变量",
+        "B": "变量的生存期是指变量所占据的内存空间释放时所用的时长",
+        "C": "局部变量所在的函数体或程序块运行结束时，分配的空间被撤销",
+        "D": "静态变量和局部变量如果没有进行初始化，系统会自动初始化为1"
+      },
+      "answer": "C",
+      "analysis": "局部变量作用域结束时空间撤销。"
+    },
+    {
+      "id": "202510-8",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "二元运算符被重载为类的成员函数时，需要传递的参数个数是",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "B",
+      "analysis": "成员函数重载二元运算符时，左操作数由this表示。"
+    },
+    {
+      "id": "202510-9",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "重载流插入运算符的一般格式为",
+      "options": {
+        "A": "istream &operator<<(ostream & input,类名&对象名){... return input;}",
+        "B": "istream &operator<<(ostream & output,类名&对象名){... return input;}",
+        "C": "ostream &operator<<(ostream & input,类名&对象名){... return output;}",
+        "D": "ostream &operator<<(ostream & output,类名&对象名){... return output;}"
+      },
+      "answer": "D",
+      "analysis": "流插入运算符返回ostream&，第一个参数为输出流。"
+    },
+    {
+      "id": "202510-10",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "在派生类的函数中对其基类成员的访问形式可以是",
+      "options": {
+        "A": "基类名::基类私有成员",
+        "B": "基类名::基类公有成员函数",
+        "C": "基类对象名.基类私有成员变量",
+        "D": "基类对象名.基类私有成员函数"
+      },
+      "answer": "B",
+      "analysis": "可通过基类名::访问基类公有成员函数。"
+    },
+    {
+      "id": "202510-11",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "若有定义class DerivedC: public BaseA, BaseB{...};，则创建类DerivedC的对象时调用次序依次是",
+      "options": {
+        "A": "BaseA，BaseB，DerivedC",
+        "B": "BaseA，DerivedC，BaseB",
+        "C": "BaseB，BaseA，DerivedC",
+        "D": "DerivedC，BaseB，BaseA"
+      },
+      "answer": "A",
+      "analysis": "多继承按基类声明顺序调用基类构造函数。"
+    },
+    {
+      "id": "202510-12",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "当一个类的某个函数被说明为virtual时，此函数在该类的所有派生类中",
+      "options": {
+        "A": "都是虚函数",
+        "B": "被重载时才是虚函数",
+        "C": "被重新说明时才是虚函数",
+        "D": "重新说明为virtual时才是虚函数"
+      },
+      "answer": "A",
+      "analysis": "基类虚函数在派生类中保持虚函数特性。"
+    },
+    {
+      "id": "202510-13",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "纯虚函数与函数体为空的虚函数的共同特点是",
+      "options": {
+        "A": "没有函数体",
+        "B": "不具有多态特征",
+        "C": "可以派生出新的类",
+        "D": "所在的类可以直接实例化"
+      },
+      "answer": "C",
+      "analysis": "两者都可作为虚函数用于派生。"
+    },
+    {
+      "id": "202510-14",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "头文件iomanip包含格式化I/O的带参数流操纵符，可用于指定",
+      "options": {
+        "A": "文件处理的有关信息",
+        "B": "文件操作的各种接口",
+        "C": "字符输入/输出的格式",
+        "D": "数据输入/输出的格式"
+      },
+      "answer": "D",
+      "analysis": "iomanip用于数据输入输出格式控制。"
+    },
+    {
+      "id": "202510-15",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于cin与cerr共同点的描述，正确的是",
+      "options": {
+        "A": "不使用缓冲区",
+        "B": "不能被重定向",
+        "C": "是标准流对象",
+        "D": "与标准输出设备相关联"
+      },
+      "answer": "C",
+      "analysis": "cin和cerr都是标准流对象。"
+    },
+    {
+      "id": "202510-16",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列通过setiosflags()设置标志字进行格式控制的方式，不正确的是",
+      "options": {
+        "A": "setiosflags(ios::hex)",
+        "B": "setiosflags(ios::left)",
+        "C": "setiosflags(ios::fixed)",
+        "D": "setiosflags(ios::resetiosflags)"
+      },
+      "answer": "D",
+      "analysis": "resetiosflags是单独操纵符，不是setiosflags的标志字。"
+    },
+    {
+      "id": "202510-17",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "向输出流中插入pch指向的一个长度为nCount的字节序列的函数是",
+      "options": {
+        "A": "ostream & in(char*pch,int nCount)",
+        "B": "ostream & put(char *pch,int nCount)",
+        "C": "ostream & read(const char *pch,int nCount)",
+        "D": "ostream & write(const char *pch,int nCount)"
+      },
+      "answer": "D",
+      "analysis": "write用于写入字节序列。"
+    },
+    {
+      "id": "202510-18",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "文件名是用字符串标识的外部文件名称，可以是",
+      "options": {
+        "A": "字符串常量",
+        "B": "字符串变量",
+        "C": "未被赋值的字符串",
+        "D": "未被赋值的字符数组"
+      },
+      "answer": "A",
+      "analysis": "文件名可以用字符串常量表示。"
+    },
+    {
+      "id": "202510-19",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于函数模板使用形式的描述，正确的是",
+      "options": {
+        "A": "函数指针指向模板本身",
+        "B": "在编译时产生部分目标代码",
+        "C": "函数指针不能指向模板的实例",
+        "D": "通过模板生成具体的函数实例时生成目标代码"
+      },
+      "answer": "D",
+      "analysis": "模板实例化后生成具体函数代码。"
+    },
+    {
+      "id": "202510-20",
+      "paper": "2025-10",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "类模板TestClass的类型参数是T，在类体外定义其成员函数getData()的格式是",
+      "options": {
+        "A": "TestClass<T>::getData(形参表){//函数体};",
+        "B": "T TestClass<T>::getData(形参表){//函数体};",
+        "C": "class T TestClass<T>::getData(形参表){//函数体};",
+        "D": "TClass<T> TestClass::getData(形参表);//函数体"
+      },
+      "answer": "B",
+      "analysis": "类外定义格式为T TestClass<T>::getData。"
+    },
+    {
+      "id": "202510-21",
+      "paper": "2025-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出10,20：class Test{ private:int x,y; public: Test(int i,int j){ ____; } int getx(){return x;} int gety(){return y;} }; int main(){ ____ (10,20); cout<<mt.getx()<<\",\"; ____ <<endl; }",
+      "answer": [
+        "x=i; y=j;",
+        "Test mt",
+        "cout<<mt.gety()"
+      ],
+      "analysis": "构造函数初始化x和y，主函数定义对象并输出gety。"
+    },
+    {
+      "id": "202510-22",
+      "paper": "2025-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出5,6,6：class CTest{ private:int x; public: CTest(int x){ ____; } CTest Add(); int getX(){return x;} }; CTest ____ { this->x++; return *this; } int main(){ CTest c1(5),c2(10); cout<<c1.getX()<<\",\"; ____ cout<<c1.getX()<<\",\"<<c2.getX()<<endl; }",
+      "answer": [
+        "this->x=x;",
+        "CTest::Add()",
+        "c2=c1.Add();"
+      ],
+      "analysis": "Add使c1自增并返回*this，赋值给c2后二者均为6。"
+    },
+    {
+      "id": "202510-23",
+      "paper": "2025-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出A的对象a：20 B的对象a：5，b：10 A的对象a：5：class A{ int a; public: A(); A(int n){a=n;} void print(){cout<<\"A的对象a：\"<<a;} ____ (int k){cout<<a;} }; ____ int b; public: B(int n):A(n/2){b=n;} void print(){ cout<<\"\\nB的对象a：\"; A::print(0); cout<<\"，b：\"<<b<<endl; } }; int main(){ ____; B b(10); a.print(); b.print(); a=b; a.print(); }",
+      "answer": [
+        "void print",
+        "class B : public A {",
+        "A a(20)"
+      ],
+      "analysis": "A中重载print(int)，B公有继承A，main中创建A a(20)。"
+    },
+    {
+      "id": "202510-24",
+      "paper": "2025-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出C++程序设计 E::~E() called. B::~B() called.：class B{ public: void start(){ cout<<\"B::start() called.\\n\"; } ____ {cout<<\"B::~B() called.\\n\";} }; class E: public B{ string buf; public: E(string p){ ____; cout<<buf<<endl; } ~E(){ cout<<\"E::~E() called.\\n\"; } }; void fun(B *a){ delete a; } int main(){ B *a=____; fun(a); }",
+      "answer": [
+        "virtual ~B()",
+        "buf=p",
+        "new E(\"C++程序设计\")"
+      ],
+      "analysis": "基类析构必须虚化，才能通过基类指针正确析构派生类对象。"
+    },
+    {
+      "id": "202510-25",
+      "paper": "2025-10",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出-1,4-->4 和 1.5,3.8-->3.8：____ class A{ public: T x,y; void f(T a,T b){x=a;y=b;} ____ {return(x>y)?x:y;} void print(T x,T y){ cout<<x<<\",\"<<y<<\"-->\"<<max(x,y)<<endl; } }; int main(){ A<int>a; A<double>b; a.f(-1,4); a.print(a.x,a.y); ____ b.print(b.x,b.y); }",
+      "answer": [
+        "template<class T>",
+        "T max()",
+        "b.f(1.5,3.8);"
+      ],
+      "analysis": "模板类需要模板声明，max成员函数返回较大值。"
+    },
+    {
+      "id": "202510-26",
+      "paper": "2025-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "2025\n25",
+      "analysis": "const对象调用const版本返回20，普通对象返回25。",
+      "codeLines": [
+        "class A{ private:int a,b;",
+        "    public: A(){",
+        "        a=20;",
+        "    }",
+        "    int getValue() const {",
+        "        return a;",
+        "    }",
+        "    int getValue(){",
+        "        return 5+a;",
+        "    }",
+        "    friend int max(int a,int b);",
+        "};",
+        "int max(int a,int b){",
+        "    return (a>b)?a:b;",
+        "}",
+        "int main(){",
+        "    const A obj1;",
+        "    A obj2;",
+        "    int a,b;",
+        "    a=obj1.getValue();",
+        "    b=obj2.getValue();",
+        "    cout<<a<<b<<endl;",
+        "    cout<<max(a,b);",
+        "}"
+      ]
+    },
+    {
+      "id": "202510-27",
+      "paper": "2025-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "(2.2,4.4)\n(1.1,2.2)",
+      "analysis": "operator*按实部乘实部、虚部乘虚部计算。",
+      "codeLines": [
+        "class Complex{ private: float real,imag;",
+        "    public: Complex(float r=0,float i=0){",
+        "        real=r;",
+        "        imag=i;",
+        "    }",
+        "    void print(){",
+        "        cout<<'('<<real<<','<<imag<<')'<<endl;",
+        "    }",
+        "    Complex operator*(const Complex &c);",
+        "};",
+        "Complex Complex::operator*(const Complex &c){",
+        "    return Complex(this->real*c.real,this->imag*c.imag);",
+        "}",
+        "int main(){",
+        "    Complex a(2.2,4.4),b(0.5,0.5),res;",
+        "    a.print();",
+        "    res=a*b;",
+        "    res.print();",
+        "}"
+      ]
+    },
+    {
+      "id": "202510-28",
+      "paper": "2025-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "Constructor of Person：\nConstructor of Student\nConstructor of Person：\nDestructor of Teacher",
+      "analysis": "构造先基类后派生类，析构顺序相反。",
+      "codeLines": [
+        "class Person{ public: Person(){",
+        "        cout<<\"Constructor of Person：\"<<endl;",
+        "    }",
+        "    ~Person(){",
+        "    }",
+        "};",
+        "class Student: public Person{ public: Student(){",
+        "        cout<<\"Constructor of Student\"<<endl;",
+        "    }",
+        "    ~Student(){",
+        "    }",
+        "};",
+        "class Teacher: public Person{ public: Teacher(){",
+        "    }",
+        "    ~Teacher(){",
+        "        cout<<\"Destructor of Teacher\"<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    Student s;",
+        "    Teacher t;",
+        "}"
+      ]
+    },
+    {
+      "id": "202510-29",
+      "paper": "2025-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "2025/10/25\n9:30\n2025/10/25",
+      "analysis": "第一次和第三次按Date输出日期，第二次按Time输出时间。",
+      "codeLines": [
+        "class Date{ protected:int year,month,day;",
+        "    public: Date(int y,int m,int d){",
+        "        setDate(y,m,d);",
+        "    }",
+        "    void setDate(int y,int m,int d){",
+        "        year=y;",
+        "        month=m;",
+        "        day=d;",
+        "    }",
+        "    void print() const{",
+        "        cout<<year<<'/'<<month<<'/'<<day<<endl;",
+        "    }",
+        "};",
+        "class Time: public Date{ private:int hours,minutes;",
+        "    public: Time(int y,int m,int d,int h,int mi):Date(y,m,d){",
+        "        setTime(h,mi);",
+        "    }",
+        "    void setTime(int h,int mi){",
+        "        hours=h;",
+        "        minutes=mi;",
+        "    }",
+        "    void print() const{",
+        "        cout<<hours<<':'<<minutes<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    Time t(2025,10,25,9,30);",
+        "    Time *p=&t;",
+        "((Date*)p)->print();",
+        "    p->print();",
+        "((Date)t).print();",
+        "}"
+      ]
+    },
+    {
+      "id": "202510-30",
+      "paper": "2025-10",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "   *a=\n123.457\n+123.457\n  -123.457\n+1.234568e+02",
+      "analysis": "width(4)只影响第一个输出；precision(6)输出123.457；showpos使正数带+；scientific科学计数输出。",
+      "codeLines": [
+        "int main(){",
+        "    double a=123.45678;",
+        "    cout.width(4);",
+        "    cout<<\"*\"<<\"a=\"<<endl;",
+        "    cout.precision(6);",
+        "    cout<<a<<endl;",
+        "    cout.setf(ios::showpos);",
+        "    cout<<a<<endl;",
+        "    cout<<setw(10)<<-a<<endl;",
+        "    cout.setf(ios::scientific);",
+        "    cout<<a<<endl;",
+        "}"
+      ]
+    },
+    {
+      "id": "202510-31",
+      "paper": "2025-10",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "编写程序，首先输入一个整数n(n<100)，再输入n个数保存在一维数组A中，调用自定义函数sortA()，将这n个数从小到大排序，主函数中输出排序后的结果。",
+      "answer": "#include<iostream>\nusing namespace std;\nvoid sortA(int A[],int n){\n for(int i=0;i<n-1;i++){\n  for(int j=0;j<n-1-i;j++){\n   if(A[j]>A[j+1]){\n    int t=A[j]; A[j]=A[j+1]; A[j+1]=t;\n   }\n  }\n }\n}\nint main(){\n int n,A[100];\n cin>>n;\n for(int i=0;i<n;i++) cin>>A[i];\n sortA(A,n);\n for(int i=0;i<n;i++) cout<<A[i]<<' ';\n return 0;\n}",
+      "analysis": "使用冒泡排序实现从小到大排序。",
+      "referenceLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "void sortA(int A[],int n){",
+        " for(int i=0;i<n-1;i++){",
+        "  for(int j=0;j<n-1-i;j++){",
+        "   if(A[j]>A[j+1]){",
+        "    int t=A[j]; A[j]=A[j+1]; A[j+1]=t;",
+        "   }",
+        "  }",
+        " }",
+        "}",
+        "int main(){",
+        " int n,A[100];",
+        " cin>>n;",
+        " for(int i=0;i<n;i++) cin>>A[i];",
+        " sortA(A,n);",
+        " for(int i=0;i<n;i++) cout<<A[i]<<' ';",
+        " return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202510-32",
+      "paper": "2025-10",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "编写程序，将d盘根目录下文件file1.txt的内容复制到同目录下新建的文件file2.txt中，并显示file2.txt文件的内容，若打开文件失败请给出提示。",
+      "answer": "#include<iostream>\n#include<fstream>\nusing namespace std;\nint main(){\n ifstream in(\"D:/file1.txt\");\n if(!in){ cout<<\"打开file1.txt失败\"<<endl; return 1; }\n ofstream out(\"D:/file2.txt\");\n char ch;\n while(in.get(ch)) out.put(ch);\n in.close(); out.close();\n ifstream show(\"D:/file2.txt\");\n if(!show){ cout<<\"打开file2.txt失败\"<<endl; return 1; }\n while(show.get(ch)) cout<<ch;\n return 0;\n}",
+      "analysis": "用文件流逐字符复制，并在失败时提示。",
+      "referenceLines": [
+        "#include<iostream>",
+        "#include<fstream>",
+        "using namespace std;",
+        "int main(){",
+        " ifstream in(\"D:/file1.txt\");",
+        " if(!in){ cout<<\"打开file1.txt失败\"<<endl; return 1; }",
+        " ofstream out(\"D:/file2.txt\");",
+        " char ch;",
+        " while(in.get(ch)) out.put(ch);",
+        " in.close(); out.close();",
+        " ifstream show(\"D:/file2.txt\");",
+        " if(!show){ cout<<\"打开file2.txt失败\"<<endl; return 1; }",
+        " while(show.get(ch)) cout<<ch;",
+        " return 0;",
+        "}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "version": 1,
+  "paper": "2026-04",
+  "questions": [
+    {
+      "id": "202604-1",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列C++标识符中，合法的是",
+      "options": {
+        "A": "123abc",
+        "B": "abc_123",
+        "C": "int",
+        "D": "abc-123"
+      },
+      "answer": "B",
+      "analysis": "标识符不能以数字开头，不能是关键字，不能包含减号。"
+    },
+    {
+      "id": "202604-2",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于C++引用的说法，正确的是",
+      "options": {
+        "A": "引用可以不初始化",
+        "B": "引用是变量的别名",
+        "C": "引用可以更换指向的变量",
+        "D": "引用可以为空"
+      },
+      "answer": "B",
+      "analysis": "引用是变量别名，必须初始化。"
+    },
+    {
+      "id": "202604-3",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "类的私有成员，在类外的访问权限是",
+      "options": {
+        "A": "完全不能访问",
+        "B": "可以任意访问",
+        "C": "只能通过友元访问",
+        "D": "只能通过派生类访问"
+      },
+      "answer": "A",
+      "analysis": "私有成员在类外不能直接访问。"
+    },
+    {
+      "id": "202604-4",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列运算符中，不能被重载的是",
+      "options": {
+        "A": "+",
+        "B": "==",
+        "C": "::",
+        "D": "<<"
+      },
+      "answer": "C",
+      "analysis": "作用域解析运算符::不能重载。"
+    },
+    {
+      "id": "202604-5",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于构造函数的说法，错误的是",
+      "options": {
+        "A": "构造函数名与类名必须相同",
+        "B": "构造函数可以有返回值",
+        "C": "构造函数可以重载",
+        "D": "创建对象时自动调用构造函数"
+      },
+      "answer": "B",
+      "analysis": "构造函数没有返回值。"
+    },
+    {
+      "id": "202604-6",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "用new运算符创建动态数组时，释放该数组的正确语句是",
+      "options": {
+        "A": "delete",
+        "B": "delete[]",
+        "C": "free",
+        "D": "free[]"
+      },
+      "answer": "B",
+      "analysis": "动态数组用delete[]释放。"
+    },
+    {
+      "id": "202604-7",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "实现C++多态性的核心机制是",
+      "options": {
+        "A": "函数重载",
+        "B": "运算符重载",
+        "C": "虚函数",
+        "D": "继承"
+      },
+      "answer": "C",
+      "analysis": "运行时多态核心是虚函数。"
+    },
+    {
+      "id": "202604-8",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "公有继承中，基类的保护成员，在派生类中的访问权限是",
+      "options": {
+        "A": "公有",
+        "B": "保护",
+        "C": "私有",
+        "D": "不可访问"
+      },
+      "answer": "B",
+      "analysis": "公有继承中保护成员仍为保护。"
+    },
+    {
+      "id": "202604-9",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列循环语句的执行次数是 for(int i=0; i<5; i++){ if(i==3) break; }",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "answer": "B",
+      "analysis": "i为0、1、2、3时进入循环体，共4次。"
+    },
+    {
+      "id": "202604-10",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于友元的说法，正确的是",
+      "options": {
+        "A": "友元函数是类的成员函数",
+        "B": "友元关系可以继承",
+        "C": "友元破坏了类的封装性",
+        "D": "友元不能访问类的私有成员"
+      },
+      "answer": "C",
+      "analysis": "友元可访问私有成员，会破坏封装性。"
+    },
+    {
+      "id": "202604-11",
+      "paper": "2026-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "C++中，用于声明纯虚函数的关键字是____",
+      "answer": [
+        "virtual"
+      ],
+      "analysis": "纯虚函数需要virtual关键字，并在声明后加=0。"
+    },
+    {
+      "id": "202604-12",
+      "paper": "2026-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "定义类时，默认的成员访问权限是____",
+      "answer": [
+        "private"
+      ],
+      "analysis": "class默认访问权限为private。"
+    },
+    {
+      "id": "202604-13",
+      "paper": "2026-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "指针变量中存储的是所指向变量的____",
+      "answer": [
+        "地址"
+      ],
+      "analysis": "指针存储内存地址。"
+    },
+    {
+      "id": "202604-14",
+      "paper": "2026-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "派生类中调用基类构造函数，需要在____中完成",
+      "answer": [
+        "初始化列表"
+      ],
+      "analysis": "派生类通常在构造函数初始化列表中调用基类构造函数。"
+    },
+    {
+      "id": "202604-15",
+      "paper": "2026-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "C++中，标准输入流对象是____",
+      "answer": [
+        "cin"
+      ],
+      "analysis": "标准输入流对象是cin。"
+    },
+    {
+      "id": "202604-16",
+      "paper": "2026-04",
+      "section": "程序阅读题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "8,5",
+      "analysis": "*p即a，执行后a=8，b不变。",
+      "codeLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "int main(){",
+        "    int a=3,b=5;",
+        "    int *p=&a,*q=&b;",
+        "    *p=*p+*q;",
+        "    cout<<a<<\",\"<<b<<endl;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202604-17",
+      "paper": "2026-04",
+      "section": "程序阅读题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "构造函数\n构造函数\n析构函数\n析构函数",
+      "analysis": "先构造t1、t2，析构顺序相反。",
+      "codeLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "class Test{ public: Test(){",
+        "        cout<<\"构造函数\"<<endl;",
+        "    }",
+        "    ~Test(){",
+        "        cout<<\"析构函数\"<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    Test t1;",
+        "    Test t2;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202604-18",
+      "paper": "2026-04",
+      "section": "程序阅读题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "24",
+      "analysis": "fun(4)=4*3*2*1=24。",
+      "codeLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "int fun(int n){",
+        "    if(n==0 || n==1) return 1;",
+        "    else return n*fun(n-1);",
+        "}",
+        "int main(){",
+        "    cout<<fun(4)<<endl;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202604-19",
+      "paper": "2026-04",
+      "section": "程序阅读题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "Derived",
+      "analysis": "show是虚函数，动态调用Derived版本。严格说基类析构非虚时delete派生对象存在未定义行为，但题目考察show输出。",
+      "codeLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "class Base{ public: virtual void show(){",
+        "        cout<<\"Base\"<<endl;",
+        "    }",
+        "};",
+        "class Derived: public Base{ public: void show(){",
+        "        cout<<\"Derived\"<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    Base *p=new Derived();",
+        "    p->show();",
+        "    delete p;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202604-20",
+      "paper": "2026-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "以下程序实现求两个整数的最大值，请补全代码：int max(____①____){ return a>b? a: b; } int main(){ int x,y; cin>>x>>y; cout<<____②____<<endl; return 0; }",
+      "answer": [
+        "int a, int b",
+        "max(x,y)"
+      ],
+      "analysis": "第一空定义两个整型形参，第二空调用max函数。"
+    },
+    {
+      "id": "202604-21",
+      "paper": "2026-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "以下程序定义一个矩形类Rectangle，计算矩形的面积，请补全代码：class Rectangle{ ____①____ int width; int height; public: Rectangle(int w,int h): ____②____{} int getArea(){ return ____③____; } };",
+      "answer": [
+        "private:",
+        "width(w), height(h)",
+        "width * height"
+      ],
+      "analysis": "width和height为私有，构造函数初始化，getArea返回面积。"
+    },
+    {
+      "id": "202604-22",
+      "paper": "2026-04",
+      "section": "编程题",
+      "type": "coding",
+      "stem": "编写一个程序，定义一个学生类Student，要求：私有成员学号id、姓名name、成绩score；公有构造函数初始化；公有成员函数showInfo()输出信息；主函数创建对象并调用showInfo()。",
+      "answer": "#include<iostream>\n#include<string>\nusing namespace std;\nclass Student{\nprivate:\n string id,name; double score;\npublic:\n Student(string i,string n,double s):id(i),name(n),score(s){}\n void showInfo(){ cout<<id<<' '<<name<<' '<<score<<endl; }\n};\nint main(){\n Student s(\"2026001\",\"ZhangSan\",90.5);\n s.showInfo();\n return 0;\n}",
+      "analysis": "私有数据成员通过构造函数初始化，公有函数输出信息。",
+      "referenceLines": [
+        "#include<iostream>",
+        "#include<string>",
+        "using namespace std;",
+        "class Student{",
+        "private:",
+        " string id,name; double score;",
+        "public:",
+        " Student(string i,string n,double s):id(i),name(n),score(s){}",
+        " void showInfo(){ cout<<id<<' '<<name<<' '<<score<<endl; }",
+        "};",
+        "int main(){",
+        " Student s(\"2026001\",\"ZhangSan\",90.5);",
+        " s.showInfo();",
+        " return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202604-23",
+      "paper": "2026-04",
+      "section": "编程题",
+      "type": "coding",
+      "stem": "编写一个程序，实现多态的应用：定义抽象基类Shape包含纯虚函数getArea()；定义Circle和Rectangle派生类并重写getArea()；主函数用基类指针分别指向派生类对象，调用getArea()输出面积。",
+      "answer": "#include<iostream>\nusing namespace std;\nclass Shape{\npublic:\n virtual double getArea()=0;\n virtual ~Shape(){}\n};\nclass Circle: public Shape{\n double r;\npublic:\n Circle(double rr):r(rr){}\n double getArea(){ return 3.14*r*r; }\n};\nclass Rectangle: public Shape{\n double w,h;\npublic:\n Rectangle(double ww,double hh):w(ww),h(hh){}\n double getArea(){ return w*h; }\n};\nint main(){\n Shape *p1=new Circle(2);\n Shape *p2=new Rectangle(3,4);\n cout<<p1->getArea()<<endl;\n cout<<p2->getArea()<<endl;\n delete p1;\n delete p2;\n return 0;\n}",
+      "analysis": "抽象基类定义接口，派生类实现面积计算，通过基类指针实现多态。",
+      "referenceLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "class Shape{",
+        "public:",
+        " virtual double getArea()=0;",
+        " virtual ~Shape(){}",
+        "};",
+        "class Circle: public Shape{",
+        " double r;",
+        "public:",
+        " Circle(double rr):r(rr){}",
+        " double getArea(){ return 3.14*r*r; }",
+        "};",
+        "class Rectangle: public Shape{",
+        " double w,h;",
+        "public:",
+        " Rectangle(double ww,double hh):w(ww),h(hh){}",
+        " double getArea(){ return w*h; }",
+        "};",
+        "int main(){",
+        " Shape *p1=new Circle(2);",
+        " Shape *p2=new Rectangle(3,4);",
+        " cout<<p1->getArea()<<endl;",
+        " cout<<p2->getArea()<<endl;",
+        " delete p1;",
+        " delete p2;",
+        " return 0;",
+        "}"
+      ]
+    }
+  ]
+}

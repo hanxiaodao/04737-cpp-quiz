@@ -1,0 +1,636 @@
+{
+  "version": 1,
+  "paper": "2025-04",
+  "questions": [
+    {
+      "id": "202504-1",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于C++程序设计语言说法正确的是",
+      "options": {
+        "A": "C++语言不支持泛型编程",
+        "B": "C++与C语言程序结构差别不大",
+        "C": "C++语言可运行于MAC操作系统",
+        "D": "C++语言是大小写不敏感的编程语言"
+      },
+      "answer": "C",
+      "analysis": "C++可运行于多种操作系统，包括MAC。"
+    },
+    {
+      "id": "202504-2",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于函数参数的默认值说法正确的是",
+      "options": {
+        "A": "提供默认值时必须按从右至左的顺序",
+        "B": "在函数原型中，不能省略形参的名字",
+        "C": "函数参数的默认值只能写在声明函数的地方",
+        "D": "在有默认值的形参右侧可以出现无默认值的形参"
+      },
+      "answer": "A",
+      "analysis": "默认参数必须从右向左连续提供。"
+    },
+    {
+      "id": "202504-3",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "设有说明const char* const p=\"ABCD\";，则下列选项中正确的是",
+      "options": {
+        "A": "允许修改指针p本身，且允许通过p修改所指向的数据",
+        "B": "允许修改指针p本身，且禁止通过p修改所指向的数据",
+        "C": "禁止修改指针p本身，且允许通过p修改所指向的数据",
+        "D": "禁止修改指针p本身，且禁止通过p修改所指向的数据"
+      },
+      "answer": "D",
+      "analysis": "const指针指向const数据，两者均不可修改。"
+    },
+    {
+      "id": "202504-4",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列选项中，不属于对象结构图中的是",
+      "options": {
+        "A": "类名",
+        "B": "属性",
+        "C": "操作",
+        "D": "对象名"
+      },
+      "answer": "C",
+      "analysis": "对象结构图更关注对象及关系，操作通常不是其核心内容。"
+    },
+    {
+      "id": "202504-5",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于类定义的叙述，错误的是",
+      "options": {
+        "A": "类中可以定义成员变量，但不能赋初值",
+        "B": "类体可以为空，也就是说可以定义一个空类",
+        "C": "类中既可以包含成员变量，也可以包含成员函数",
+        "D": "类中可以声明成员函数，但不能给出参数的默认值"
+      },
+      "answer": "D",
+      "analysis": "成员函数可以有默认参数，D错误。"
+    },
+    {
+      "id": "202504-6",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "构造函数不具备的特征是",
+      "options": {
+        "A": "构造函数可以重载",
+        "B": "构造函数必须指定返回类型",
+        "C": "构造函数可以设置默认参数",
+        "D": "构造函数的函数名与类名相同"
+      },
+      "answer": "B",
+      "analysis": "构造函数没有返回类型。"
+    },
+    {
+      "id": "202504-7",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "函数中声明的静态变量",
+      "options": {
+        "A": "在程序中可见，程序结束时释放占用的空间",
+        "B": "在程序中可见，函数执行结束时释放占用的空间",
+        "C": "在函数体中可见，程序结束时释放占用的空间",
+        "D": "在函数体中可见，函数执行结束时释放占用的空间"
+      },
+      "answer": "C",
+      "analysis": "静态局部变量作用域在函数体，生命周期到程序结束。"
+    },
+    {
+      "id": "202504-8",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "如果类A将其他类对象作为成员，那么在创建类A时",
+      "options": {
+        "A": "先执行类A的构造函数",
+        "B": "先执行成员对象的构造函数",
+        "C": "两者并行执行",
+        "D": "系统报错"
+      },
+      "answer": "B",
+      "analysis": "包含对象成员时，先构造成员对象。"
+    },
+    {
+      "id": "202504-9",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "假设类A是类B的友元类，类B是类C的友元类，则",
+      "options": {
+        "A": "类A一定是类C的友元类",
+        "B": "类C一定是类A的友元类",
+        "C": "类C的成员函数中可以访问类B的对象的任何成员",
+        "D": "类A的成员函数中可以访问类B的对象的任何成员"
+      },
+      "answer": "D",
+      "analysis": "友元关系不可传递，A是B的友元，可访问B。"
+    },
+    {
+      "id": "202504-10",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列符号中，不可重载的运算符是",
+      "options": {
+        "A": "++",
+        "B": "+",
+        "C": "#",
+        "D": "="
+      },
+      "answer": "C",
+      "analysis": "#不是C++运算符，不能重载。"
+    },
+    {
+      "id": "202504-11",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "运算符函数是一种特殊的友元函数或",
+      "options": {
+        "A": "构造函数",
+        "B": "析构函数",
+        "C": "成员函数",
+        "D": "重载函数"
+      },
+      "answer": "C",
+      "analysis": "运算符函数可以是友元函数或成员函数。"
+    },
+    {
+      "id": "202504-12",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "在派生类公有继承基类时，基类中的所有公有成员成为派生类的",
+      "options": {
+        "A": "public成员",
+        "B": "private成员",
+        "C": "protected成员",
+        "D": "友元"
+      },
+      "answer": "A",
+      "analysis": "公有继承保持基类公有成员为公有。"
+    },
+    {
+      "id": "202504-13",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "如果没有说明，C++默认的继承方式是",
+      "options": {
+        "A": "public",
+        "B": "private",
+        "C": "protected",
+        "D": "不能确定"
+      },
+      "answer": "B",
+      "analysis": "class默认继承方式是private。"
+    },
+    {
+      "id": "202504-14",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列选项中，允许的赋值是",
+      "options": {
+        "A": "派生类对象=基类对象",
+        "B": "基类的引用=派生类对象",
+        "C": "派生类的引用=基类对象",
+        "D": "指向派生类类型的指针=基类对象的地址"
+      },
+      "answer": "B",
+      "analysis": "派生类对象可向上转换为基类引用。"
+    },
+    {
+      "id": "202504-15",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "调用虚函数时，可以实现动态多态的是",
+      "options": {
+        "A": "对象名",
+        "B": "基类对象",
+        "C": "派生类名",
+        "D": "基类对象指针"
+      },
+      "answer": "D",
+      "analysis": "通过基类指针或引用调用虚函数可实现动态多态。"
+    },
+    {
+      "id": "202504-16",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列能够表示基类中纯虚函数的是",
+      "options": {
+        "A": "void tt(int)=0",
+        "B": "virtual void tt(int)",
+        "C": "virtual void tt()=0",
+        "D": "virtual void tt(int)"
+      },
+      "answer": "C",
+      "analysis": "纯虚函数需要virtual和=0。"
+    },
+    {
+      "id": "202504-17",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "作用为以科学计数法形式输出浮点数的流操纵符是",
+      "options": {
+        "A": "fixed",
+        "B": "scientific",
+        "C": "boolalpha",
+        "D": "internal"
+      },
+      "answer": "B",
+      "analysis": "scientific用于科学计数法。"
+    },
+    {
+      "id": "202504-18",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "在文件操作中，表示以追加方式打开文件的是",
+      "options": {
+        "A": "ios::ate",
+        "B": "ios::app",
+        "C": "ios::out",
+        "D": "ios::trunc"
+      },
+      "answer": "B",
+      "analysis": "ios::app表示追加。"
+    },
+    {
+      "id": "202504-19",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "关于函数模板同名函数重载的叙述，正确的是",
+      "options": {
+        "A": "函数模板只能用其他类属参数重载",
+        "B": "函数模板只能用参数个数相同的参数重载",
+        "C": "函数模板可以用不同类型、不同个数参数重载",
+        "D": "函数模板由调用自身进行实例化，不可以定义重载版本"
+      },
+      "answer": "C",
+      "analysis": "函数模板可通过不同类型、不同参数个数重载。"
+    },
+    {
+      "id": "202504-20",
+      "paper": "2025-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "建立类模板对象的实例化过程为",
+      "options": {
+        "A": "基类→派生类",
+        "B": "构造函数→对象",
+        "C": "模板类→对象",
+        "D": "模板类→模板函数"
+      },
+      "answer": "C",
+      "analysis": "类模板实例化为具体对象。"
+    },
+    {
+      "id": "202504-21",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "对象具有两个特性：行为和状态。其中行为指的是对象的____",
+      "answer": [
+        "操作"
+      ],
+      "analysis": "行为对应对象的操作或成员函数。"
+    },
+    {
+      "id": "202504-22",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "由于____一个对象可以有独特的表现方式，而另一个对象有另一种表现方式",
+      "answer": [
+        "多态性"
+      ],
+      "analysis": "不同对象对同一消息表现不同是多态。"
+    },
+    {
+      "id": "202504-23",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "为隐藏类的成员变量，通常将成员变量定义为private。此时，可以通过定义____向外界暴露访问接口",
+      "answer": [
+        "公有成员函数"
+      ],
+      "analysis": "通过public成员函数提供访问接口。"
+    },
+    {
+      "id": "202504-24",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "析构函数的主要作用是释放使用new操作符分配的____",
+      "answer": [
+        "内存"
+      ],
+      "analysis": "析构函数常用于释放动态内存。"
+    },
+    {
+      "id": "202504-25",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "如果类A的成员变量b是类B的对象，则类A和类B之间具有____关系",
+      "answer": [
+        "组合"
+      ],
+      "analysis": "一个类包含另一个类对象是组合关系。"
+    },
+    {
+      "id": "202504-26",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "有两个运算符，系统提供了默认的重载版本。它们是赋值运算符=和____",
+      "answer": [
+        "取地址运算符&"
+      ],
+      "analysis": "默认重载的常见运算符是=和&。"
+    },
+    {
+      "id": "202504-27",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "若类A派生类B，类B派生类C，那么类A是类C的____",
+      "answer": [
+        "基类"
+      ],
+      "analysis": "A是C的间接基类。"
+    },
+    {
+      "id": "202504-28",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "所谓____，就是在函数声明时前面加了virtual关键字的成员函数",
+      "answer": [
+        "虚函数"
+      ],
+      "analysis": "virtual修饰的成员函数是虚函数。"
+    },
+    {
+      "id": "202504-29",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "为满足数据输入/输出格式的要求，C++提供了通过setiosflags()设置____进行格式控制的方式",
+      "answer": [
+        "标志字"
+      ],
+      "analysis": "setiosflags通过标志字控制格式。"
+    },
+    {
+      "id": "202504-30",
+      "paper": "2025-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "发出关闭文件命令后，系统会将缓冲区中的数据完整地____文件，同时添加文件结束标记",
+      "answer": [
+        "写入"
+      ],
+      "analysis": "关闭文件时将缓冲区数据写入文件。"
+    },
+    {
+      "id": "202504-31",
+      "paper": "2025-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出的结果为85：class Test{ public: ____ Test(int i=5){ x=i+x; } int Getnum(){ return Test::x+7; } }; ____ ; int main(){ Test test; cout<<test.Getnum()<<endl; }",
+      "answer": [
+        "static int x;",
+        "int Test::x=73;"
+      ],
+      "analysis": "x是静态成员，初始为73，默认构造i=5后x=78，Getnum输出85。"
+    },
+    {
+      "id": "202504-32",
+      "paper": "2025-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出100,10,1 和 0,5,1：class pointer{ public: int a; int *p; pointer(){ a=100; p=new int(10); } pointer(const pointer &tempp){ if(this != ____) { a=tempp.a; p=____; } } };",
+      "answer": [
+        "&tempp",
+        "tempp.p"
+      ],
+      "analysis": "拷贝构造采用浅拷贝，使两个指针指向同一块内存。"
+    },
+    {
+      "id": "202504-33",
+      "paper": "2025-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出Base默认构造函数 D_Base默认构造函数 D_Base析构函数 Base析构函数 Base带2个参数的构造函数 D_Base带3个参数的构造函数 D_Base析构函数 Base析构函数：class D_Base{ private: int price; Base ty; public: D_Base(int p,int tr,int w): ____, ty(tr,w){ cout<<\"D_Base 带3个参数的构造函数\"<<endl; } ____ };",
+      "answer": [
+        "price(p)",
+        "~D_Base(){"
+      ],
+      "analysis": "第一空初始化price，第二空定义析构函数。"
+    },
+    {
+      "id": "202504-34",
+      "paper": "2025-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "将程序补充完整，使程序输出Base::fun() Derived::fun()：class Base{ public: ____ void fun(){ cout<<\"Base::fun()\"<<endl; } }; int main(){ ____; return 0; }",
+      "answer": [
+        "virtual",
+        "FunTest();"
+      ],
+      "analysis": "第一空可声明虚函数，第二空调用测试函数。"
+    },
+    {
+      "id": "202504-35",
+      "paper": "2025-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "完成程序，从输入的字符串中提取电话号码。输入Tel,123456，输出123456：while(!cin.eof()){ cin.ignore(10,','); if(____){ ____ cout<<str<<endl; } }",
+      "answer": [
+        "cin.getline(str,30)",
+        ";"
+      ],
+      "analysis": "ignore跳过逗号前内容，getline读取剩余电话号码；第二空可为空语句。"
+    },
+    {
+      "id": "202504-36",
+      "paper": "2025-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "35",
+      "analysis": "15.0调用double版本得5，15调用int版本得30，总和35。",
+      "codeLines": [
+        "class A{ public: int fun(double);",
+        "    int fun(int);",
+        "};",
+        "int A::fun(double x){",
+        "    return (int)x/3;",
+        "}",
+        "int A::fun(int x){",
+        "    return x*2;",
+        "}",
+        "int main(){",
+        "    A a;",
+        "    int s=a.fun(15.0)+a.fun(15);",
+        "    cout<<s<<endl;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202504-37",
+      "paper": "2025-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "11\n12\n13",
+      "analysis": "每次调用b、c重新初始化，结果为a+8+3。",
+      "codeLines": [
+        "int f(int a){",
+        "    int b=1,c=2;",
+        "    b++;",
+        "    c++;",
+        "    return int(a+pow(double(b),3)+c);",
+        "}",
+        "int main(){",
+        "    int i;",
+        "    for(i=0;i<3;i++) cout<<f(i)<<endl;",
+        "}"
+      ]
+    },
+    {
+      "id": "202504-38",
+      "paper": "2025-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "10\n10",
+      "analysis": "pa指向a，pb指向pa，两次解引用仍得到a。",
+      "codeLines": [
+        "int main(){",
+        "    int *pa;",
+        "    int **pb=&pa;",
+        "    int a=10,b=20;",
+        "    pa=&a;",
+        "    cout<<*pa<<endl<<**pb<<endl;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202504-39",
+      "paper": "2025-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "10\n2",
+      "analysis": "x调用非const print，a变为10；y是const对象，输出2。",
+      "codeLines": [
+        "class exa{",
+        "    int a;",
+        "    public: exa(int b=9){",
+        "        a=b++;",
+        "    }",
+        "    void print(){",
+        "        a=a+1;",
+        "        cout<<a<<endl;",
+        "    }",
+        "    void print() const{",
+        "        cout<<a<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    exa x;",
+        "    const exa y(2);",
+        "    x.print();",
+        "    y.print();",
+        "}"
+      ]
+    },
+    {
+      "id": "202504-40",
+      "paper": "2025-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果",
+      "answer": "#123\n456",
+      "analysis": "width只影响下一次输出，123占3位，补一个#。",
+      "codeLines": [
+        "int main(){",
+        "    cout.width(4);",
+        "    cout.fill('#');",
+        "    cout<<setiosflags(ios::right)<<123<<endl;",
+        "    cout.fill('+');",
+        "    cout<<setiosflags(ios::left)<<456<<endl;",
+        "}"
+      ]
+    },
+    {
+      "id": "202504-41",
+      "paper": "2025-04",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "设计程序，输入圆的半径，计算圆的周长和面积。其中，pi用常量定义，半径、周长和面积为双精度类型。",
+      "answer": "#include<iostream>\nusing namespace std;\nint main(){\n const double pi=3.1415926;\n double r,c,s;\n cin>>r;\n c=2*pi*r;\n s=pi*r*r;\n cout<<c<<' '<<s<<endl;\n return 0;\n}",
+      "analysis": "使用公式c=2πr，s=πr²。",
+      "referenceLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "int main(){",
+        " const double pi=3.1415926;",
+        " double r,c,s;",
+        " cin>>r;",
+        " c=2*pi*r;",
+        " s=pi*r*r;",
+        " cout<<c<<' '<<s<<endl;",
+        " return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202504-42",
+      "paper": "2025-04",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "文件score.txt中存储内容为学生的学号、姓名和成绩，设计程序，从文件中读入学生成绩并显示。",
+      "answer": "#include<iostream>\n#include<fstream>\n#include<string>\nusing namespace std;\nint main(){\n ifstream in(\"score.txt\");\n string id,name; int score;\n cout<<\"学号 姓名 成绩\"<<endl;\n while(in>>id>>name>>score){\n  cout<<id<<' '<<name<<' '<<score<<endl;\n }\n return 0;\n}",
+      "analysis": "用ifstream按字段读取并输出。",
+      "referenceLines": [
+        "#include<iostream>",
+        "#include<fstream>",
+        "#include<string>",
+        "using namespace std;",
+        "int main(){",
+        " ifstream in(\"score.txt\");",
+        " string id,name; int score;",
+        " cout<<\"学号 姓名 成绩\"<<endl;",
+        " while(in>>id>>name>>score){",
+        "  cout<<id<<' '<<name<<' '<<score<<endl;",
+        " }",
+        " return 0;",
+        "}"
+      ]
+    }
+  ]
+}

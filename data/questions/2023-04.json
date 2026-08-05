@@ -1,0 +1,738 @@
+{
+  "version": 1,
+  "paper": "2023-04",
+  "questions": [
+    {
+      "id": "202304-1",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "C++语言对C语言做了很多改进，相对于C语言最根本的变化是",
+      "options": {
+        "A": "引进了类和对象的概念",
+        "B": "增加了一些新的运算符",
+        "C": "规定函数说明符必须用原型",
+        "D": "允许函数重载，并允许设置缺省参数"
+      },
+      "answer": "A",
+      "analysis": "C++相对于C最根本的变化是引入面向对象机制，即类和对象。"
+    },
+    {
+      "id": "202304-2",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "如想使用命名空间myspace，正确的程序语句是",
+      "options": {
+        "A": "using myspace;",
+        "B": "using namespace;",
+        "C": "namespace myspace;",
+        "D": "using namespace myspace;"
+      },
+      "answer": "D",
+      "analysis": "使用命名空间的语法是using namespace 命名空间名;。"
+    },
+    {
+      "id": "202304-3",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列选项中，代码复用粒度最大的是",
+      "options": {
+        "A": "类",
+        "B": "对象",
+        "C": "函数",
+        "D": "变量"
+      },
+      "answer": "A",
+      "analysis": "类封装了数据和操作，是较大的复用单位。"
+    },
+    {
+      "id": "202304-4",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于类的叙述，不正确的是",
+      "options": {
+        "A": "类中可以定义不是任何类的成员的函数",
+        "B": "类的成员变量和成员函数不能定义在类外",
+        "C": "类中的成员按功能划分，包括成员变量和成员函数",
+        "D": "类中的成员按访问权限划分，包括公有成员、私有成员和保护成员"
+      },
+      "answer": "B",
+      "analysis": "成员函数可以定义在类外，类外定义需要作用域限定。"
+    },
+    {
+      "id": "202304-5",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "析构函数被调用的时间点是",
+      "options": {
+        "A": "对象被创建时",
+        "B": "对象被复制时",
+        "C": "对象被销毁时",
+        "D": "对象被引用时"
+      },
+      "answer": "C",
+      "analysis": "对象销毁时自动调用析构函数。"
+    },
+    {
+      "id": "202304-6",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "使用new创建的对象，对其生命周期描述正确的是",
+      "options": {
+        "A": "具有固定生存期",
+        "B": "具有动态生存期",
+        "C": "无引用时由系统自动回收",
+        "D": "从定义处开始，到程序块结束处结束"
+      },
+      "answer": "B",
+      "analysis": "new创建的对象在堆上，生存期由delete控制，属于动态生存期。"
+    },
+    {
+      "id": "202304-7",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于运算符重载的叙述，不正确的是",
+      "options": {
+        "A": "运算符重载不能创建新运算符",
+        "B": "运算符重载不能重载为全局函数",
+        "C": "运算符重载不能改变运算符的原有语义",
+        "D": "运算符重载不能改变运算符操作数的个数"
+      },
+      "answer": "B",
+      "analysis": "运算符可以重载为成员函数或全局函数。"
+    },
+    {
+      "id": "202304-8",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "使用浅拷贝可能带来的问题不包括",
+      "options": {
+        "A": "程序访问非法地址",
+        "B": "变量类型转换错误",
+        "C": "重复释放同一块空间",
+        "D": "变量之间的多余关联"
+      },
+      "answer": "B",
+      "analysis": "浅拷贝主要问题是共享指针资源，可能导致非法地址或重复释放。"
+    },
+    {
+      "id": "202304-9",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于空类的叙述，不正确的是",
+      "options": {
+        "A": "无成员变量",
+        "B": "无成员函数",
+        "C": "可以作为基类",
+        "D": "不能派生子类"
+      },
+      "answer": "D",
+      "analysis": "空类也可以作为基类派生子类。"
+    },
+    {
+      "id": "202304-10",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "不允许外界直接访问，但允许派生类的成员直接访问的是",
+      "options": {
+        "A": "基类的公有成员",
+        "B": "基类的保护成员",
+        "C": "基类的私有成员",
+        "D": "派生类中定义的公有成员"
+      },
+      "answer": "B",
+      "analysis": "protected成员对外隐藏，但派生类可访问。"
+    },
+    {
+      "id": "202304-11",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "在实现多态的正常代码中，去掉基类的virtual，会出现",
+      "options": {
+        "A": "无法通过编译",
+        "B": "可以通过编译，但无法正常运行",
+        "C": "无影响，运行结果不变",
+        "D": "可以正常运行，但运行结果可能改变"
+      },
+      "answer": "D",
+      "analysis": "去掉virtual后按静态绑定调用，程序可运行但结果可能变化。"
+    },
+    {
+      "id": "202304-12",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "类B派生自类A，A不使用虚析构函数。执行语句A*p=new B(); delete p;结果为",
+      "options": {
+        "A": "只执行B的析构函数",
+        "B": "只执行A的析构函数",
+        "C": "接连执行A和B的析构函数",
+        "D": "接连执行B和A的析构函数"
+      },
+      "answer": "B",
+      "analysis": "基类析构非虚时，通过基类指针delete通常只调用基类析构，行为未定义，考试通常答只执行A析构。"
+    },
+    {
+      "id": "202304-13",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "实现多态时，必须满足的条件是",
+      "options": {
+        "A": "创建基类对象",
+        "B": "使用基类引用调用其声明的函数",
+        "C": "声明派生类指针或引用",
+        "D": "使用基类指针调用其声明的虚函数"
+      },
+      "answer": "D",
+      "analysis": "运行时多态通常需要基类指针或引用调用虚函数。"
+    },
+    {
+      "id": "202304-14",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于抽象类的描述中，不正确的是",
+      "options": {
+        "A": "抽象类中至少应该有一个纯虚函数",
+        "B": "抽象类的派生类必定是具体类",
+        "C": "抽象类通常用作类族中最顶层的类",
+        "D": "抽象类可以定义对象指针和引用"
+      },
+      "answer": "B",
+      "analysis": "如果派生类未实现所有纯虚函数，派生类仍是抽象类。"
+    },
+    {
+      "id": "202304-15",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "iostream是C++标准类库中的一个关键的流类，从该类派生的流类为",
+      "options": {
+        "A": "ifstream",
+        "B": "fstream",
+        "C": "ofstream",
+        "D": "ostream"
+      },
+      "answer": "B",
+      "analysis": "fstream从iostream派生，可同时用于输入输出。"
+    },
+    {
+      "id": "202304-16",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于cin的叙述，不正确的是",
+      "options": {
+        "A": "cin是一个预定义类",
+        "B": "cin可以从键盘输入数据",
+        "C": "cin可以从文件输入数据",
+        "D": "cin与标准输入设备相关联"
+      },
+      "answer": "A",
+      "analysis": "cin是预定义的标准输入流对象，不是类。"
+    },
+    {
+      "id": "202304-17",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "将1到100输出为001、002、......、100，需要使用流操纵符",
+      "options": {
+        "A": "setw和left",
+        "B": "setfill和fixed",
+        "C": "setw和right",
+        "D": "setfill和showpos"
+      },
+      "answer": "C",
+      "analysis": "需要setw控制宽度并右对齐，实际还应配合setfill('0')。"
+    },
+    {
+      "id": "202304-18",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "已有ifstream input;，能将input流对象的读指针移到距当前位置后(文件尾方向)100个字节处的语句是",
+      "options": {
+        "A": "input.seekg(100,ios::beg)",
+        "B": "input.seekg(-100,ios::cur)",
+        "C": "input.seekg(100,ios::cur)",
+        "D": "input.seekg(-100,ios::end)"
+      },
+      "answer": "C",
+      "analysis": "从当前位置向后移动100字节用ios::cur和正偏移。"
+    },
+    {
+      "id": "202304-19",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列关于文件读写操作的叙述，正确的是",
+      "options": {
+        "A": "每个文件均有一个文件结束符",
+        "B": "C++将文件看成随机排列的无结构的字节流",
+        "C": "使用文件流打开对象后，文件只能成为一个输入流",
+        "D": "文本文件中通常将一个记录放在一列中，用换行符分隔"
+      },
+      "answer": "D",
+      "analysis": "文本文件通常按行组织记录，用换行分隔。题干中一列应为一行的OCR误差。"
+    },
+    {
+      "id": "202304-20",
+      "paper": "2023-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "假设有函数模板声明如下，则选项中不正确的是 template<typename T> T add(T a,T b,T c){return a+b+c;}",
+      "options": {
+        "A": "add('a','b','c');",
+        "B": "add(10,100,1000)",
+        "C": "add(\"a\",\"b\",\"c\");",
+        "D": "add(0.1,0.01,0.001);"
+      },
+      "answer": "C",
+      "analysis": "字符串常量是const char*类型，不能直接用+连接。"
+    },
+    {
+      "id": "202304-21",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "内联函数的函数体是在____时被替换，一般函数的函数体是在调用时被转去执行",
+      "answer": [
+        "编译"
+      ],
+      "analysis": "内联函数在编译时展开。"
+    },
+    {
+      "id": "202304-22",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "在C++标识符的作用域中，最大的是____作用域",
+      "answer": [
+        "文件"
+      ],
+      "analysis": "文件作用域是常见标识符作用域中最大的。"
+    },
+    {
+      "id": "202304-23",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "如果一个类没有任何构造函数，则由系统自动添加一个____",
+      "answer": [
+        "默认构造函数"
+      ],
+      "analysis": "系统自动生成无参默认构造函数。"
+    },
+    {
+      "id": "202304-24",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "友元机制虽然破坏了类的封装性，但是有助于____",
+      "answer": [
+        "提高程序效率"
+      ],
+      "analysis": "友元可直接访问私有成员，提高访问效率。"
+    },
+    {
+      "id": "202304-25",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "A::A(int a,int*b){this->x=a; this->y=b;}中，this的类型是____",
+      "answer": [
+        "A* const"
+      ],
+      "analysis": "this是指向当前对象的常量指针，类型为A* const。"
+    },
+    {
+      "id": "202304-26",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "将运算符>>重载为类CS的友元函数的格式是：friend istream & operator>> ____",
+      "answer": [
+        "(istream&, CS&)"
+      ],
+      "analysis": "友元输入流运算符需要输入流对象和类对象两个参数。"
+    },
+    {
+      "id": "202304-27",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "控制基类成员在派生类中的访问属性，一般都使用继承方式说明符____",
+      "answer": [
+        "public、protected、private"
+      ],
+      "analysis": "继承方式说明符决定基类成员在派生类中的访问属性。"
+    },
+    {
+      "id": "202304-28",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "派生类对象的初始化工作应该由基类和派生类的____共同实现",
+      "answer": [
+        "构造函数"
+      ],
+      "analysis": "派生类对象初始化需要基类和派生类构造函数共同完成。"
+    },
+    {
+      "id": "202304-29",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "除继承关系之外，类和类之间还可以是____关系",
+      "answer": [
+        "组合"
+      ],
+      "analysis": "类之间常见关系包括继承和组合。"
+    },
+    {
+      "id": "202304-30",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "在面向对象设计思想中，多态可以理解为一种接口，____",
+      "answer": [
+        "多种实现"
+      ],
+      "analysis": "多态的核心是同一接口不同实现。"
+    },
+    {
+      "id": "202304-31",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "包含纯虚函数的类被称为抽象类，它不能____",
+      "answer": [
+        "实例化"
+      ],
+      "analysis": "抽象类不能直接创建对象。"
+    },
+    {
+      "id": "202304-32",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "流类中提供的getline()函数可以从输入流中读取一行数据，行结束符是____",
+      "answer": [
+        "换行符"
+      ],
+      "analysis": "getline默认读取到换行符。"
+    },
+    {
+      "id": "202304-33",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "在非标准文件操作中，应该先定义流对象，再打开文件，必须使用____函数",
+      "answer": [
+        "open"
+      ],
+      "analysis": "流对象定义后可用open打开文件。"
+    },
+    {
+      "id": "202304-34",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "函数模板实例化过程由编译器完成，生成____",
+      "answer": [
+        "模板函数"
+      ],
+      "analysis": "编译器根据实参类型生成具体模板函数。"
+    },
+    {
+      "id": "202304-35",
+      "paper": "2023-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "如果类模板的成员函数定义在类体中，则其自动成为____",
+      "answer": [
+        "内联函数"
+      ],
+      "analysis": "类体内定义的成员函数默认为内联。"
+    },
+    {
+      "id": "202304-36",
+      "paper": "2023-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "数据文件a.txt中保存了空格分隔的8个整数，计算它们的最大值。代码：int a[8]; int i=0; cout<<\"从文件中读取8个整数......\"<<endl; ____(1) //将标准输入重定向到文件a.txt for(i=0;i<8;i++) ____(2) int max=a[0]; ...",
+      "answer": [
+        "freopen(\"a.txt\",\"r\",stdin);",
+        "cin>>a[i];"
+      ],
+      "analysis": "第一空重定向标准输入到a.txt，第二空逐个读入数组。也可用ifstream实现类似功能。"
+    },
+    {
+      "id": "202304-37",
+      "paper": "2023-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "在程序的下划线处填上正确的语句，使其输出结果为x=2,y=3。class Sample{ private:int x,y; public: Sample(int a,int b); void display(){cout<<\"x=\"<<x<<\", y=\"<<y<<endl;} }; ____(1)(int a,int b){ x=a; y=b; } int main(){ Sample ____(2); Sample *p=&s; p->display(); return 0; }",
+      "answer": [
+        "Sample::Sample",
+        "s(2,3)"
+      ],
+      "analysis": "第一空是类外定义构造函数，第二空定义对象s并初始化。"
+    },
+    {
+      "id": "202304-38",
+      "paper": "2023-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "友元函数访问对象，输出结果2023/4/1和2023/10/1。class Date{ public: Date(int y,int m,int d){ year=y; month=m; day=d; } ____(1)(Date &); private:int year,month,day; }; void Print(Date &d){ cout<<d.year<<'/'<<d.month<<'/'<<d.day<<endl; } int main(){ Date d1(2023,4,1), ____(2); Print(d1); Print(d2); return 0; }",
+      "answer": [
+        "friend void Print",
+        "d2(2023,10,1)"
+      ],
+      "analysis": "第一空声明友元函数Print，第二空定义d2并初始化。"
+    },
+    {
+      "id": "202304-39",
+      "paper": "2023-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "为类Position重载运算符+，从而实现Position对象的加法操作。class Position{ int x,y; public: Position(int px,int py){x=px;y=py;} ____(1)(const Position &p){ return ____(2); } };",
+      "answer": [
+        "Position operator+",
+        "Position(x+p.x, y+p.y)"
+      ],
+      "analysis": "第一空重载+运算符，第二空返回新的Position对象。"
+    },
+    {
+      "id": "202304-40",
+      "paper": "2023-04",
+      "section": "程序填空题",
+      "type": "fill_blank",
+      "stem": "D1定义一个派生类D2，在D2中重写函数pvf()，创建一个D2类的对象调用函数f()、vf()、pvf()。class B1{ public: virtual void vf(){cout<<\"B1::vf()\"<<endl;} void f(){cout<<\"B1::f()\"<<endl;} virtual void pvf()=0; }; class D1: public B1{ public: virtual void vf(){cout<<\"D1::vf()\"<<endl;} void f(){cout<<\"D1::f()\"<<endl;} }; class ____(1){ public: virtual void pvf(){cout<<\"D2::pvf()\"<<endl;} }; int main(){ D2 d2; d2.f(); ____(2); d2.pvf(); return 0; }",
+      "answer": [
+        "D2: public D1",
+        "d2.vf();"
+      ],
+      "analysis": "D2从D1派生并实现纯虚函数pvf，main中调用vf。"
+    },
+    {
+      "id": "202304-41",
+      "paper": "2023-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "阅读程序写运行结果",
+      "answer": "第1次7\n第2次12\n第3次17",
+      "analysis": "num初始为2，每次加5并保存结果。",
+      "codeLines": [
+        "class Count{ public: static int num;",
+        "    static int stat(int a){",
+        "        return num=a+num;",
+        "    }",
+        "};",
+        "int Count::num=2;",
+        "int main(){",
+        "    for(int i=0;i<3;i++) cout<<\"第\"<<i+1<<\"次\"<<Count::stat(5)<<endl;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202304-42",
+      "paper": "2023-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "阅读程序写运行结果",
+      "answer": "1constructor\n2constructor\npd[0]=1,pd[1]=2\n2destructor\n1destructor",
+      "analysis": "构造数组元素按顺序执行，析构数组按相反顺序执行。",
+      "codeLines": [
+        "int global=1;",
+        "class Demo{ private:int i;",
+        "    public: Demo(){",
+        "        i=global++;",
+        "        cout<<i<<\"constructor\"<<endl;",
+        "    }",
+        "    ~Demo(){",
+        "        cout<<i<<\"destructor\"<<endl;",
+        "    }",
+        "    int getValue(){",
+        "        return i;",
+        "    }",
+        "};",
+        "int main(){",
+        "    Demo *pd=new Demo[2];",
+        "    cout<<\"pd[0]=\"<<pd[0].getValue()<<\",pd[1]=\"<<pd[1].getValue()<<endl;",
+        "    delete[] pd;",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202304-43",
+      "paper": "2023-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "阅读程序写运行结果",
+      "answer": "9,8,7\n0,0,0\n0,0,0\n4,3,2\n3,3,3\n4,3,2",
+      "analysis": "a连续自减5次后为4,3,2；b被assign为3,3,3；c=b=a最终得到a的值。",
+      "codeLines": [
+        "class TriCoor{ public: TriCoor(int mx=0,int my=0,int mz=0){",
+        "        x=mx;",
+        "        y=my;",
+        "        z=mz;",
+        "    }",
+        "    void show(){",
+        "        cout<<x<<\",\"<<y<<\",\"<<z<<\"\\n\";",
+        "    }",
+        "    TriCoor operator--(){",
+        "        x--;",
+        "        y--;",
+        "        z--;",
+        "        return *this;",
+        "    }",
+        "    TriCoor operator=(TriCoor t){",
+        "        x=t.x;",
+        "        y=t.y;",
+        "        z=t.z;",
+        "        return *this;",
+        "    }",
+        "    void assign(int mx,int my,int mz){",
+        "        x=mx;",
+        "        y=my;",
+        "        z=mz;",
+        "    }",
+        "    private:int x,y,z;",
+        "};",
+        "int main(){",
+        "    TriCoor a(9,8,7),b,c;",
+        "    a.show();",
+        "    b.show();",
+        "    c.show();",
+        "    for(int i=0;i<5;i++) --a;",
+        "    a.show();",
+        "    b.assign(3,3,3);",
+        "    b.show();",
+        "    c=b=a;",
+        "    c.show();",
+        "}"
+      ]
+    },
+    {
+      "id": "202304-44",
+      "paper": "2023-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "阅读程序写运行结果",
+      "answer": "Person::study\nStudent::rest\nStudent::study\nStudent::rest",
+      "analysis": "study在Person中不是虚函数，pp->study静态绑定到Person；rest是虚函数，动态绑定到Student。",
+      "codeLines": [
+        "class Person{ public: void study(){",
+        "        cout<<\"Person::study\"<<endl;",
+        "    }",
+        "    virtual void rest(){",
+        "        cout<<\"Person::rest\"<<endl;",
+        "    }",
+        "};",
+        "class Student: public Person{ public: virtual void study(){",
+        "        cout<<\"Student::study\"<<endl;",
+        "    }",
+        "    void rest(){",
+        "        cout<<\"Student::rest\"<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    Student s;",
+        "    Person *pp=&s;",
+        "    Student *ps=&s;",
+        "    pp->study();",
+        "    pp->rest();",
+        "    ps->study();",
+        "    ps->rest();",
+        "    return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202304-45",
+      "paper": "2023-04",
+      "section": "程序分析题",
+      "type": "code_output",
+      "stem": "阅读程序写运行结果",
+      "answer": "234\n*****234ok\n1.23457\n****1.23\ncout.put(c):\nc",
+      "analysis": "setw和setfill产生*填充，setprecision(3)保留3个有效数字，c+2为c。",
+      "codeLines": [
+        "int main(){",
+        "    int a=234;",
+        "    cout.setf(ios::dec,ios::basefield);",
+        "    cout<<a<<endl;",
+        "    cout<<setfill('*')<<setw(8)<<a<<\"ok\"<<endl;",
+        "    double b=1.234567;",
+        "    cout<<b<<endl;",
+        "    cout<<setw(8)<<setprecision(3)<<b<<endl;",
+        "    char c='a';",
+        "    cout<<\"cout.put(c):\"<<endl;",
+        "    cout.put(c+2);",
+        "}"
+      ]
+    },
+    {
+      "id": "202304-46",
+      "paper": "2023-04",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "读入当前文件夹下文件dev1.cpp，为该文件的每行代码加上行号后存入dev2.txt文件中。",
+      "answer": "#include<iostream>\n#include<fstream>\n#include<string>\nusing namespace std;\nint main(){\n ifstream in(\"dev1.cpp\");\n ofstream out(\"dev2.txt\");\n string line;\n int no=1;\n while(getline(in,line)){ out<<no<<\" \"<<line<<endl; no++; }\n return 0;\n}",
+      "analysis": "按行读取文件，行号递增并写入新文件。",
+      "referenceLines": [
+        "#include<iostream>",
+        "#include<fstream>",
+        "#include<string>",
+        "using namespace std;",
+        "int main(){",
+        " ifstream in(\"dev1.cpp\");",
+        " if(!in){ cout<<\"打开dev1.cpp失败\"<<endl; return 1; }",
+        " ofstream out(\"dev2.txt\");",
+        " string line;",
+        " int no=1;",
+        " while(getline(in,line)){ out<<no<<\" \"<<line<<endl; no++; }",
+        " in.close(); out.close();",
+        " return 0;",
+        "}"
+      ]
+    },
+    {
+      "id": "202304-47",
+      "paper": "2023-04",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "参考Point类和主函数的信息，逐步完成派生类Circle的设计，要求：增加数据成员r；设计Circle类中构造、析构、输出、设置数据成员和获取数据成员的函数；设计计算圆面积的函数。",
+      "answer": "class Circle: public Point{\nprivate:\n double r;\npublic:\n Circle(double xx=0,double yy=0,double rr=0):Point(xx,yy),r(rr){}\n ~Circle(){ cout<<\"执行Circle析构函数\"<<endl; }\n void Input(){ Point::Input(); cout<<\"Input r:\"; cin>>r; }\n void Show(){ Point::Show(); cout<<\"r=\"<<r<<endl; }\n void SetCircle(double xx,double yy,double rr){ SetPoint(xx,yy); r=rr; }\n double GetR(){ return r; }\n double Area(){ return PI*r*r; }\n};",
+      "analysis": "Circle公有继承Point，扩展半径r，并实现输入、输出、设置、获取和面积计算。",
+      "referenceLines": [
+        "class Circle: public Point{",
+        "private:",
+        " double r;",
+        "public:",
+        " Circle(double xx=0,double yy=0,double rr=0):Point(xx,yy),r(rr){}",
+        " ~Circle(){ cout<<\"执行Circle析构函数\"<<endl; }",
+        " void Input(){ Point::Input(); cout<<\"Input r:\"; cin>>r; }",
+        " void Show(){ Point::Show(); cout<<\"r=\"<<r<<endl; }",
+        " void SetCircle(double xx,double yy,double rr){ SetPoint(xx,yy); r=rr; }",
+        " double GetR(){ return r; }",
+        " double Area(){ return PI*r*r; }",
+        "};"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "202604-choice-1",
+      "paper": "2026-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "下列C++标识符中，合法的是",
+      "options": {
+        "A": "123abc",
+        "B": "abc_123",
+        "C": "int",
+        "D": "abc-123"
+      },
+      "answer": "B",
+      "analysis": "C++标识符可以由字母、数字、下划线组成，但不能以数字开头，不能是关键字，也不能包含减号。",
+      "tags": ["标识符", "基础"],
+      "difficulty": 1,
+      "source": "2026年4月真题"
+    },
+    {
+      "id": "202604-fill-15",
+      "paper": "2026-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "C++中，标准输入流对象是________。",
+      "answer": ["cin"],
+      "analysis": "C++标准输入流对象是cin，标准输出流对象是cout。",
+      "tags": ["输入输出"],
+      "difficulty": 1,
+      "source": "2026年4月真题"
+    },
+    {
+      "id": "202604-code-output-16",
+      "paper": "2026-04",
+      "section": "程序阅读题",
+      "type": "code_output",
+      "stem": "写出下列程序的运行结果。",
+      "codeLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "int main(){",
+        "    int a=3, b=5;",
+        "    int *p=&a, *q=&b;",
+        "    *p=*p+*q;",
+        "    cout<< a<<\",\"<< b<< endl;",
+        "    return 0;",
+        "}"
+      ],
+      "answer": ["8,5"],
+      "accepted": ["8, 5"],
+      "analysis": "*p就是变量a，*q就是变量b。执行*p = *p + *q后，a变为8，b仍然为5。",
+      "tags": ["指针", "程序阅读"],
+      "difficulty": 2,
+      "source": "2026年4月真题"
+    },
+    {
+      "id": "202604-code-fill-20",
+      "paper": "2026-04",
+      "section": "程序填空题",
+      "type": "code_fill",
+      "stem": "以下程序实现求两个整数的最大值，请补全代码。",
+      "codeLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "int max(____①____){ return a>b? a: b; }",
+        "int main(){",
+        "    int x,y;",
+        "    cin>> x>> y;",
+        "    cout<<____②____<< endl;",
+        "    return 0;",
+        "}"
+      ],
+      "blanks": [
+        {
+          "id": "①",
+          "answers": ["int a, int b", "int a,int b"]
+        },
+        {
+          "id": "②",
+          "answers": ["max(x, y)", "max(x,y)"]
+        }
+      ],
+      "analysis": "函数max需要两个整型形参；主函数中调用max(x,y)得到最大值。",
+      "tags": ["函数", "程序填空"],
+      "difficulty": 2,
+      "source": "2026年4月真题"
+    },
+    {
+      "id": "202604-coding-22",
+      "paper": "2026-04",
+      "section": "程序设计题",
+      "type": "coding",
+      "stem": "编写一个程序，定义一个学生类Student，包含学号、姓名、成绩，并能输出学生信息。",
+      "referenceLines": [
+        "#include <iostream>",
+        "#include <string>",
+        "using namespace std;",
+        "",
+        "class Student {",
+        "private:",
+        "    string id;",
+        "    string name;",
+        "    double score;",
+        "public:",
+        "    Student(string i, string n, double s) : id(i), name(n), score(s) {}",
+        "    void showInfo() {",
+        "        cout << id << ' ' << name << ' ' << score << endl;",
+        "    }",
+        "};",
+        "",
+        "int main() {",
+        "    Student s(\"2026001\", \"ZhangSan\", 90.5);",
+        "    s.showInfo();",
+        "    return 0;",
+        "}"
+      ],
+      "analysis": "类中通常将数据成员设为私有，通过公有构造函数初始化数据成员，通过公有成员函数完成输出。",
+      "tags": ["类与对象", "程序设计"],
+      "difficulty": 3,
+      "source": "2026年4月真题"
+    },
+    {
+      "id": "202404-choice-1",
+      "paper": "2024-04",
+      "section": "单项选择题",
+      "type": "single_choice",
+      "stem": "要建立良好的程序设计风格，描述正确的是",
+      "options": {
+        "A": "无需给程序添加注释",
+        "B": "变量命名只要符合语法",
+        "C": "首先考虑程序的执行效率",
+        "D": "程序应清晰、可读性好"
+      },
+      "answer": "D",
+      "analysis": "良好的程序设计风格强调程序清晰、可读性好，注释、命名规范、结构清楚都很重要。",
+      "tags": ["程序设计风格"],
+      "difficulty": 1,
+      "source": "2024年4月真题"
+    },
+    {
+      "id": "202404-fill-22",
+      "paper": "2024-04",
+      "section": "填空题",
+      "type": "fill_blank",
+      "stem": "执行代码 string str(\"NihaoC++\"); cout<<str.substr(5,3); 的输出结果是________。",
+      "answer": ["C++"],
+      "analysis": "字符串下标从0开始，下标5是C，从下标5开始取3个字符为C++。",
+      "tags": ["string", "substr"],
+      "difficulty": 2,
+      "source": "2024年4月真题"
+    }
+  ]
+}
