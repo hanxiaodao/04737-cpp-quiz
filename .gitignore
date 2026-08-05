@@ -13,3 +13,6 @@ raw/
 # 临时文件
 *.tmp
 *.log
+
+# Playwright MCP
+.playwright-mcp/

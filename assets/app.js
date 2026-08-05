@@ -2,11 +2,9 @@
   const view = document.getElementById('view');
   const STORAGE_KEY = 'cpp_quiz_v1';
 
-  // 设置页访问控制（纯前端防护：防误操作/他人顺手操作，非强安全）
-  const SETTINGS_PWD_KEY = 'cpp_quiz_settings_pwd';
-  const SETTINGS_PWD_CHANGED_KEY = 'cpp_quiz_settings_pwd_changed';
+  // 设置页访问控制（纯前端防护：防误操作/他人顺手操作，非强安全；密码写死，不支持修改）
   const SETTINGS_UNLOCK_KEY = 'cpp_quiz_settings_unlocked';
-  const DEFAULT_SETTINGS_PWD = '04737';
+  const SETTINGS_PWD = '141924';
 
   const TYPE_LABELS = {
     single_choice: '选择题',
@@ -1029,7 +1027,7 @@
   }
 
   function getSettingsPwd() {
-    return localStorage.getItem(SETTINGS_PWD_KEY) || DEFAULT_SETTINGS_PWD;
+    return SETTINGS_PWD;
   }
 
   function settingsUnlocked() {
@@ -1051,8 +1049,7 @@
       view.innerHTML = `
         <div class="card">
           <h1>设置</h1>
-          <p class="muted">设置页中的操作（清空、导入、导出、修改密码等）已加权限保护，请输入管理密码解锁。</p>
-          ${localStorage.getItem(SETTINGS_PWD_CHANGED_KEY) ? '' : '<p class="muted">默认密码 <code>04737</code>，解锁后请及时修改。</p>'}
+          <p class="muted">设置页中的操作（清空、导入、导出等）已加权限保护，请输入管理密码解锁。</p>
           <input type="password" id="settingsPwd" placeholder="管理密码">
           <div class="btn-row">
             <button class="btn primary" data-action="unlock-settings">解锁</button>
@@ -1081,13 +1078,7 @@
           <label class="file-btn">导入本机数据<input type="file" id="importProgress" accept="application/json"></label>
           <label class="file-btn">导入题库JSON<input type="file" id="importQuestions" accept="application/json"></label>
         </div>
-      </div>
-      <div class="card">
-        <h2>修改管理密码</h2>
-        <input type="password" id="oldPwd" placeholder="当前密码">
-        <input type="password" id="newPwd" placeholder="新密码（至少 4 位）">
         <div class="btn-row">
-          <button class="btn" data-action="change-pwd">保存新密码</button>
           <button class="btn" data-action="lock-settings">锁定设置</button>
         </div>
       </div>
@@ -1233,26 +1224,6 @@
 
     if (action === 'lock-settings') {
       sessionStorage.removeItem(SETTINGS_UNLOCK_KEY);
-      render();
-    }
-
-    if (action === 'change-pwd') {
-      const oldInput = document.getElementById('oldPwd');
-      const newInput = document.getElementById('newPwd');
-
-      if (!oldInput || oldInput.value !== getSettingsPwd()) {
-        alert('当前密码错误');
-        return;
-      }
-
-      if (!newInput || newInput.value.length < 4) {
-        alert('新密码至少 4 位');
-        return;
-      }
-
-      localStorage.setItem(SETTINGS_PWD_KEY, newInput.value);
-      localStorage.setItem(SETTINGS_PWD_CHANGED_KEY, '1');
-      alert('管理密码已更新');
       render();
     }
   });
