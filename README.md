@@ -20,6 +20,21 @@ https://hanxiaodao.github.io/04737-cpp-quiz/
 python -m http.server 8000
 ```
 
+## 更新题库
+
+新增或修改 `data/questions/*.json` 后，运行更新脚本（校验全部题库 + 重建 `data/manifest.json`）：
+
+```bash
+node tools/update.mjs               # 本地模式：只校验和重建 manifest，不提交
+node tools/update.mjs --deploy      # 校验通过后自动提交并推送 master（触发部署）
+```
+
+单项校验可单独使用：
+
+```bash
+node tools/validate.mjs data/questions/2026-04.json
+```
+
 ## 部署
 
 推送至 `master` 分支即自动触发 GitHub Actions 部署至 Pages（见 `.github/workflows/deploy.yml`）。

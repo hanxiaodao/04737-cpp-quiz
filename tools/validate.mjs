@@ -1,4 +1,5 @@
 import { readFileSync } from 'fs';
+import { checkQuestions } from './validate-lib.mjs';
 
 const file = process.argv[2];
 
@@ -17,41 +18,13 @@ if (!Array.isArray(questions)) {
   process.exit(1);
 }
 
-const ids = new Set();
+const { errors, warnings } = checkQuestions(questions);
 
-questions.forEach((q, index) => {
-  if (!q.id) {
-    console.error(`错误：第 ${index + 1} 题缺少 id`);
-    process.exit(1);
-  }
+warnings.forEach(w => console.error(`警告：${w}`));
 
-  if (ids.has(q.id)) {
-    console.error(`错误：题目 id 重复：${q.id}`);
-    process.exit(1);
-  }
-
-  ids.add(q.id);
-
-  if (!q.type) {
-    console.error(`错误：题目 ${q.id} 缺少 type`);
-    process.exit(1);
-  }
-
-  if (!q.stem && !q.code && !q.codeLines) {
-    console.error(`警告：题目 ${q.id} 可能缺少题干`);
-  }
-
-  if (q.type === 'single_choice') {
-    if (!q.options) {
-      console.error(`错误：选择题 ${q.id} 缺少 options`);
-      process.exit(1);
-    }
-
-    if (!q.answer) {
-      console.error(`错误：选择题 ${q.id} 缺少 answer`);
-      process.exit(1);
-    }
-  }
-});
+if (errors.length) {
+  errors.forEach(e => console.error(`错误：${e}`));
+  process.exit(1);
+}
 
 console.log('校验通过：', file);
