@@ -483,7 +483,10 @@
         "    \"2023年\",\"10月\",____(1)",
         "};",
         "string c=\"C++程序设计\";",
-        "cout<<\"Time：\"<<____(2)",
+        "if(c.empty())",
+        "    cout<<\"string is NULL\"<<endl;",
+        "else",
+        "    cout<<\"Time：\"<<____(2)",
         "cout<<c<<\"(\"<<c.size()<<\")\"<<endl;",
         "cout<<s[2].insert(8,c)<<endl;"
       ]
@@ -586,7 +589,8 @@
       "codeLines": [
         "class Base{",
         "    public:",
-        "    ____(1) Base(const char *na){",
+        "    ____(1)",
+        "    Base(const char *na){",
         "        strcpy(name,na);",
         "    }",
         "};",
@@ -618,7 +622,8 @@
       ],
       "analysis": "第一空定义模板函数max1，第二空输出double的最大值。",
       "codeLines": [
-        "template<typename AT> ____(1){",
+        "template<typename AT>",
+        "____(1){",
         "    return (x>y)?x:y;",
         "}",
         "int main(){",

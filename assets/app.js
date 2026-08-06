@@ -1284,6 +1284,27 @@
     }
   });
 
+  // 方向键切换题目：仅测验页生效，焦点在输入框/文本域时忽略（避免干扰编辑）
+  window.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    if (parseHash().path !== '/quiz') return;
+    if (!quiz || !quiz.qids || !quiz.qids.length) return;
+
+    const tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || tag === 'select' || e.target.isContentEditable) return;
+
+    e.preventDefault();
+    if (e.key === 'ArrowLeft' && quiz.index > 0) {
+      quiz.index--;
+      saveQuiz();
+      render();
+    } else if (e.key === 'ArrowRight' && quiz.index < quiz.qids.length - 1) {
+      quiz.index++;
+      saveQuiz();
+      render();
+    }
+  });
+
   window.addEventListener('hashchange', render);
 
   async function init() {

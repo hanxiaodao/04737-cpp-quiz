@@ -426,14 +426,15 @@
       "codeLines": [
         "class Test{",
         "    public:",
-        "    ____ Test(int i=5){",
+        "    ____(1)",
+        "    Test(int i=5){",
         "        x=i+x;",
         "    }",
         "    int Getnum(){",
         "        return Test::x+7;",
         "    }",
         "};",
-        "____ ;",
+        "____(2);",
         "int main(){",
         "    Test test;",
         "    cout<<test.Getnum()<<endl;",
@@ -461,9 +462,9 @@
         "        p=new int(10);",
         "    }",
         "    pointer(const pointer &tempp){",
-        "        if(this != ____) {",
+        "        if(this != ____(1)) {",
         "            a=tempp.a;",
-        "            p=____;",
+        "            p=____(2);",
         "        }",
         "    }",
         "};"
@@ -486,10 +487,10 @@
         "    int price;",
         "    Base ty;",
         "    public:",
-        "    D_Base(int p,int tr,int w): ____, ty(tr,w){",
+        "    D_Base(int p,int tr,int w): ____(1), ty(tr,w){",
         "        cout<<\"D_Base 带3个参数的构造函数\"<<endl;",
         "    }",
-        "    ____",
+        "    ____(2)",
         "};"
       ]
     },
@@ -507,13 +508,12 @@
       "codeLines": [
         "class Base{",
         "    public:",
-        "    ____",
-        "    void fun(){",
+        "    ____(1) void fun(){",
         "        cout<<\"Base::fun()\"<<endl;",
         "    }",
         "};",
         "int main(){",
-        "    ____;",
+        "    ____(2);",
         "    return 0;",
         "}"
       ]
@@ -532,8 +532,8 @@
       "codeLines": [
         "while(!cin.eof()){",
         "    cin.ignore(10,',');",
-        "    if(____){",
-        "        ____",
+        "    if(____(1)){",
+        "        ____(2)",
         "        cout<<str<<endl;",
         "    }",
         "}"
