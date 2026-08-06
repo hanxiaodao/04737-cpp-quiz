@@ -83,6 +83,19 @@
     return q.reference || (q.referenceLines || []).join('\n') || '';
   }
 
+  // 题型匹配：程序填空题既可能是 code_fill 类型，也可能是 fill_blank 类型且 section 含"程序填空"
+  // （历史题库数据结构如此，前端归类统一处理，两个分类互斥不重复统计）
+  function isTypeOf(q, type) {
+    const isProgFill = q.type === 'fill_blank' && String(q.section || '').indexOf('程序填空') !== -1;
+    if (type === 'code_fill') {
+      return q.type === 'code_fill' || isProgFill;
+    }
+    if (type === 'fill_blank') {
+      return q.type === 'fill_blank' && !isProgFill;
+    }
+    return q.type === type;
+  }
+
   // 写入答题历史（IndexedDB，静默失败不影响主流程）
   function recordHistory(q, answer, correct) {
     if (!window.QuizIDB) return;
@@ -415,7 +428,7 @@
     `;
 
     Object.keys(TYPE_LABELS).forEach(function (type) {
-      const n = allQuestions().filter(function (q) { return q.type === type; }).length;
+      const n = allQuestions().filter(function (q) { return isTypeOf(q, type); }).length;
 
       html += `
         <div class="card type-card">
@@ -481,7 +494,7 @@
     }
 
     if (qtype) {
-      qs = qs.filter(function (q) { return q.type === qtype; });
+      qs = qs.filter(function (q) { return isTypeOf(q, qtype); });
     }
 
     const typeName = TYPE_LABELS[qtype];
@@ -542,7 +555,7 @@
     }
 
     if (options.qtype) {
-      qs = qs.filter(function (q) { return q.type === options.qtype; });
+      qs = qs.filter(function (q) { return isTypeOf(q, options.qtype); });
     }
 
     if (options.mode === 'random') {
