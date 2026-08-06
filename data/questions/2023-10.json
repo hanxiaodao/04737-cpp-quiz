@@ -472,60 +472,164 @@
       "paper": "2023-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "补全程序，使其输出：Time：2023年10月 / C++程序设计(11) / 高等教育C++程序设计自学考试。代码要点：string s[]={\"2023年\",\"10月\",____(1)}; string c=\"C++程序设计\"; cout<<\"Time：\"<<____(2) cout<<c<<\"(\"<<c.size()<<\")\"<<endl; cout<<s[2].insert(8,c)<<endl;",
+      "stem": "补全程序，使其输出：Time：2023年10月 / C++程序设计(11) / 高等教育C++程序设计自学考试。",
       "answer": [
         "高等教育自学考试",
         "s[0]<<s[1]<<endl;"
       ],
-      "analysis": "第三行初始字符串为高等教育自学考试，insert在合适位置插入C++程序设计；第二空输出s[0]和s[1]。"
+      "analysis": "第三行初始字符串为高等教育自学考试，insert在合适位置插入C++程序设计；第二空输出s[0]和s[1]。",
+      "codeLines": [
+        "string s[]={",
+        "    \"2023年\",\"10月\",____(1)",
+        "};",
+        "string c=\"C++程序设计\";",
+        "cout<<\"Time：\"<<____(2)",
+        "cout<<c<<\"(\"<<c.size()<<\")\"<<endl;",
+        "cout<<s[2].insert(8,c)<<endl;"
+      ]
     },
     {
       "id": "202310-37",
       "paper": "2023-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "程序用来求直角三角形斜边长度，运行结果为5。class Point{ private: double x,y; ____(1) public: Point(double i=0,double j=0){x=i;y=j;} Point(Point &p){x=p.x;y=p.y;} }; class Line{ private: Point p1,p2; public: Line(Point &xp1,Point &xp2):p1(xp1),p2(xp2){} double GetLength(){ double dx=p2.x-p1.x; double dy=p2.y-p1.y; return sqrt(dx*dx+dy*dy); } }; int main(){ Point L1,L2(3,4); Line L3(L1,L2); cout<<____(2)<<endl; }",
+      "stem": "程序用来求直角三角形斜边长度，运行结果为5。",
       "answer": [
         "friend class Line;",
         "L3.GetLength()"
       ],
-      "analysis": "Line需要访问Point的私有成员x和y，因此声明友元；主函数调用GetLength。"
+      "analysis": "Line需要访问Point的私有成员x和y，因此声明友元；主函数调用GetLength。",
+      "codeLines": [
+        "class Point{",
+        "    private:",
+        "    double x,y;",
+        "    ____(1)",
+        "    public:",
+        "    Point(double i=0,double j=0){",
+        "        x=i;",
+        "        y=j;",
+        "    }",
+        "    Point(Point &p){",
+        "        x=p.x;",
+        "        y=p.y;",
+        "    }",
+        "};",
+        "class Line{",
+        "    private:",
+        "    Point p1,p2;",
+        "    public:",
+        "    Line(Point &xp1,Point &xp2):p1(xp1),p2(xp2){",
+        "    }",
+        "    double GetLength(){",
+        "        double dx=p2.x-p1.x;",
+        "        double dy=p2.y-p1.y;",
+        "        return sqrt(dx*dx+dy*dy);",
+        "    }",
+        "};",
+        "int main(){",
+        "    Point L1,L2(3,4);",
+        "    Line L3(L1,L2);",
+        "    cout<<____(2)<<endl;",
+        "}"
+      ]
     },
     {
       "id": "202310-38",
       "paper": "2023-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出hello!hello!。class str{ private: char*st; public: str(char *a){set(a);} ____(1){ set(a.st); return *this; } void show(){cout<<st<<\"!\";} void set(char *s){ st=new char[strlen(s)+1]; strcpy(st,s); } }; int main(){ str s1(\"hello\"),s2(\"world\"); ____(2); s1.show(); s2.show(); }",
+      "stem": "以下程序输出hello!hello!。",
       "answer": [
         "str& operator=(str &a)",
         "s2=s1;"
       ],
-      "analysis": "第一空重载赋值运算符，第二空把s1赋给s2，使两个对象都保存hello。"
+      "analysis": "第一空重载赋值运算符，第二空把s1赋给s2，使两个对象都保存hello。",
+      "codeLines": [
+        "class str{",
+        "    private:",
+        "    char*st;",
+        "    public:",
+        "    str(char *a){",
+        "        set(a);",
+        "    }",
+        "    ____(1){",
+        "        set(a.st);",
+        "        return *this;",
+        "    }",
+        "    void show(){",
+        "        cout<<st<<\"!\";",
+        "    }",
+        "    void set(char *s){",
+        "        st=new char[strlen(s)+1];",
+        "        strcpy(st,s);",
+        "    }",
+        "};",
+        "int main(){",
+        "    str s1(\"hello\"),s2(\"world\");",
+        "    ____(2);",
+        "    s1.show();",
+        "    s2.show();",
+        "}"
+      ]
     },
     {
       "id": "202310-39",
       "paper": "2023-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出name:D Class Derived=80。class Base{ public: ____(1) Base(const char *na){strcpy(name,na);} }; class ____(2){ public: Derived(const char *nm):Base(nm){} void show(); }; void Derived::show(){cout<<\"name:\"<<name;} int main(){ Derived d1(\"D\"); d1.show(); cout<<\" Class Derived=\"<<sizeof(Derived)<<endl; }",
+      "stem": "以下程序输出name:D Class Derived=80。",
       "answer": [
         "char name[80];",
         "Derived : public Base"
       ],
-      "analysis": "Base中定义80字节字符数组name，Derived公有继承Base，因此sizeof(Derived)为80。"
+      "analysis": "Base中定义80字节字符数组name，Derived公有继承Base，因此sizeof(Derived)为80。",
+      "codeLines": [
+        "class Base{",
+        "    public:",
+        "    ____(1) Base(const char *na){",
+        "        strcpy(name,na);",
+        "    }",
+        "};",
+        "class ____(2){",
+        "    public:",
+        "    Derived(const char *nm):Base(nm){",
+        "    }",
+        "    void show();",
+        "};",
+        "void Derived::show(){",
+        "    cout<<\"name:\"<<name;",
+        "}",
+        "int main(){",
+        "    Derived d1(\"D\");",
+        "    d1.show();",
+        "    cout<<\" Class Derived=\"<<sizeof(Derived)<<endl;",
+        "}"
+      ]
     },
     {
       "id": "202310-40",
       "paper": "2023-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出23,10.1,c。template<typename AT> ____(1){ return (x>y)?x:y; } int main(){ int i1=20,i2=23; double d1=10.1,d2=4.1; char c1='a',c2='c'; cout<<max1(i1,i2)<<\",\"; ____(2) cout<<max1(c1,c2)<<endl; }",
+      "stem": "以下程序输出23,10.1,c。",
       "answer": [
         "AT max1(AT x, AT y)",
         "cout<<max1(d1,d2)<<\",\";"
       ],
-      "analysis": "第一空定义模板函数max1，第二空输出double的最大值。"
+      "analysis": "第一空定义模板函数max1，第二空输出double的最大值。",
+      "codeLines": [
+        "template<typename AT> ____(1){",
+        "    return (x>y)?x:y;",
+        "}",
+        "int main(){",
+        "    int i1=20,i2=23;",
+        "    double d1=10.1,d2=4.1;",
+        "    char c1='a',c2='c';",
+        "    cout<<max1(i1,i2)<<\",\";",
+        "    ____(2)",
+        "    cout<<max1(c1,c2)<<endl;",
+        "}"
+      ]
     },
     {
       "id": "202310-41",

@@ -305,25 +305,49 @@
       "paper": "2026-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序实现求两个整数的最大值，请补全代码：int max(____①____){ return a>b? a: b; } int main(){ int x,y; cin>>x>>y; cout<<____②____<<endl; return 0; }",
+      "stem": "以下程序实现求两个整数的最大值，请补全",
       "answer": [
         "int a, int b",
         "max(x,y)"
       ],
-      "analysis": "第一空定义两个整型形参，第二空调用max函数。"
+      "analysis": "第一空定义两个整型形参，第二空调用max函数。",
+      "codeLines": [
+        "int max(____①____){",
+        "    return a>b? a: b;",
+        "}",
+        "int main(){",
+        "    int x,y;",
+        "    cin>>x>>y;",
+        "    cout<<____②____<<endl;",
+        "    return 0;",
+        "}"
+      ]
     },
     {
       "id": "202604-21",
       "paper": "2026-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序定义一个矩形类Rectangle，计算矩形的面积，请补全代码：class Rectangle{ ____①____ int width; int height; public: Rectangle(int w,int h): ____②____{} int getArea(){ return ____③____; } };",
+      "stem": "以下程序定义一个矩形类Rectangle，计算矩形的面积，请补全",
       "answer": [
         "private:",
         "width(w), height(h)",
         "width * height"
       ],
-      "analysis": "width和height为私有，构造函数初始化，getArea返回面积。"
+      "analysis": "width和height为私有，构造函数初始化，getArea返回面积。",
+      "codeLines": [
+        "class Rectangle{",
+        "    ____①____",
+        "    int width;",
+        "    int height;",
+        "    public:",
+        "    Rectangle(int w,int h): ____②____{",
+        "    }",
+        "    int getArea(){",
+        "        return ____③____;",
+        "    }",
+        "};"
+      ]
     },
     {
       "id": "202604-22",

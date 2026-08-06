@@ -472,60 +472,154 @@
       "paper": "2024-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出2024，请补全：#include<iostream> using namespace std; ____ //定义命名空间ns { int x=24; } int main(){ int x=20; cout<<x; cout<<____; }",
+      "stem": "以下程序输出2024，请补全",
       "answer": [
         "namespace ns",
         "ns::x"
       ],
-      "analysis": "第一空定义命名空间ns，第二空用作用域访问ns中的x。"
+      "analysis": "第一空定义命名空间ns，第二空用作用域访问ns中的x。",
+      "codeLines": [
+        "#include<iostream>",
+        "using namespace std;",
+        "____",
+        "//定义命名空间ns {",
+        "    int x=24;",
+        "}",
+        "int main(){",
+        "    int x=20;",
+        "    cout<<x;",
+        "    cout<<____;",
+        "}"
+      ]
     },
     {
       "id": "202404-37",
       "paper": "2024-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出98分，请补全：class Test{ private:int n; public: Test(int i=9){n=i;} int Get(){return n;} int Get() const{____} }; int main(){ ____ const Test b(10); cout<<a.Get()<<b.Get()<<\"分\"<<endl; }",
+      "stem": "以下程序输出98分，请补全",
       "answer": [
         "return n-2;",
         "Test a;"
       ],
-      "analysis": "a默认构造为9；const对象b为10，为输出8，const版Get返回n-2。"
+      "analysis": "a默认构造为9；const对象b为10，为输出8，const版Get返回n-2。",
+      "codeLines": [
+        "class Test{",
+        "    private:",
+        "    int n;",
+        "    public:",
+        "    Test(int i=9){",
+        "        n=i;",
+        "    }",
+        "    int Get(){",
+        "        return n;",
+        "    }",
+        "    int Get() const{",
+        "        ____",
+        "    }",
+        "};",
+        "int main(){",
+        "    ____",
+        "    const Test b(10);",
+        "    cout<<a.Get()<<b.Get()<<\"分\"<<endl;",
+        "}"
+      ]
     },
     {
       "id": "202404-38",
       "paper": "2024-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "按要求完成类的定义：姓名和性别是教师、学生共有的属性，年级和成绩是学生特有的属性。class person{ public: ____ }; class teacher: public person{ private: char title[20]; double salary; }; class student: ____ { private: char grade[20]; int score; };",
+      "stem": "按要求完成类的定义：姓名和性别是教师、学生共有的属性，年级和成绩是学生特有的属性。",
       "answer": [
         "char name[20]; char sex[10];",
         "public person"
       ],
-      "analysis": "person中定义共有属性name和sex；student公有继承person。"
+      "analysis": "person中定义共有属性name和sex；student公有继承person。",
+      "codeLines": [
+        "class person{",
+        "    public:",
+        "    ____",
+        "};",
+        "class teacher: public person{",
+        "    private:",
+        "    char title[20];",
+        "    double salary;",
+        "};",
+        "class student: ____ {",
+        "    private:",
+        "    char grade[20];",
+        "    int score;",
+        "};"
+      ]
     },
     {
       "id": "202404-39",
       "paper": "2024-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "补全程序，使其输出结果为：2024年4月 C++程序设计自学考试。class A{ public: A(){cout<<\"2024年\";} ~A(){cout<<\"自学考试\"<<endl;} }; class B:A{ public: B(){____} ~B(){____} }; int main(){ B obj; }",
+      "stem": "补全程序，使其输出结果为：2024年4月 C++程序设计自学考试。",
       "answer": [
         "cout<<\"4月\";",
         "cout<<\"C++程序设计\";"
       ],
-      "analysis": "构造顺序先A后B，析构顺序先B后A。"
+      "analysis": "构造顺序先A后B，析构顺序先B后A。",
+      "codeLines": [
+        "class A{",
+        "    public:",
+        "    A(){",
+        "        cout<<\"2024年\";",
+        "    }",
+        "    ~A(){",
+        "        cout<<\"自学考试\"<<endl;",
+        "    }",
+        "};",
+        "class B:A{",
+        "    public:",
+        "    B(){",
+        "        ____",
+        "    }",
+        "    ~B(){",
+        "        ____",
+        "    }",
+        "};",
+        "int main(){",
+        "    B obj;",
+        "}"
+      ]
     },
     {
       "id": "202404-40",
       "paper": "2024-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "补全程序，使其运行结果为：输出1：1008 输出2：883。class A{ public: A(int a=135){m_a=a;} int get(){return m_a++;} private:int m_a; }; int ____ { return a1.get()+a2.get()-15; } int main(){ A a1(888),a2,a3=9; cout<<\"输出1：\"<<a1+a2<<endl; ____ }",
+      "stem": "补全程序，使其运行结果为：输出1：1008 输出2：883。",
       "answer": [
         "operator+(A &a1, A &a2)",
         "cout<<\"输出2：\"<<a1+a3<<endl;"
       ],
-      "analysis": "重载+后，第一次输出888+135-15=1008；第二次a1已自增为889，889+9-15=883。"
+      "analysis": "重载+后，第一次输出888+135-15=1008；第二次a1已自增为889，889+9-15=883。",
+      "codeLines": [
+        "class A{",
+        "    public:",
+        "    A(int a=135){",
+        "        m_a=a;",
+        "    }",
+        "    int get(){",
+        "        return m_a++;",
+        "    }",
+        "    private:",
+        "    int m_a;",
+        "};",
+        "int ____ {",
+        "    return a1.get()+a2.get()-15;",
+        "}",
+        "int main(){",
+        "    A a1(888),a2,a3=9;",
+        "    cout<<\"输出1：\"<<a1+a2<<endl;",
+        "    ____",
+        "}"
+      ]
     },
     {
       "id": "202404-41",

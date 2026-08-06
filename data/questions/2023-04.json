@@ -472,60 +472,160 @@
       "paper": "2023-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "数据文件a.txt中保存了空格分隔的8个整数，计算它们的最大值。代码：int a[8]; int i=0; cout<<\"从文件中读取8个整数......\"<<endl; ____(1) //将标准输入重定向到文件a.txt for(i=0;i<8;i++) ____(2) int max=a[0]; ...",
+      "stem": "数据文件a.txt中保存了空格分隔的8个整数，计算它们的最大值。",
       "answer": [
         "freopen(\"a.txt\",\"r\",stdin);",
         "cin>>a[i];"
       ],
-      "analysis": "第一空重定向标准输入到a.txt，第二空逐个读入数组。也可用ifstream实现类似功能。"
+      "analysis": "第一空重定向标准输入到a.txt，第二空逐个读入数组。也可用ifstream实现类似功能。",
+      "codeLines": [
+        "int a[8];",
+        "int i=0;",
+        "cout<<\"从文件中读取8个整数......\"<<endl;",
+        "____(1)",
+        "//将标准输入重定向到文件a.txt",
+        "for(i=0;i<8;i++) ____(2)",
+        "int max=a[0];",
+        "..."
+      ]
     },
     {
       "id": "202304-37",
       "paper": "2023-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "在程序的下划线处填上正确的语句，使其输出结果为x=2,y=3。class Sample{ private:int x,y; public: Sample(int a,int b); void display(){cout<<\"x=\"<<x<<\", y=\"<<y<<endl;} }; ____(1)(int a,int b){ x=a; y=b; } int main(){ Sample ____(2); Sample *p=&s; p->display(); return 0; }",
+      "stem": "在程序的下划线处填上正确的语句，使其输出结果为x=2,y=3。",
       "answer": [
         "Sample::Sample",
         "s(2,3)"
       ],
-      "analysis": "第一空是类外定义构造函数，第二空定义对象s并初始化。"
+      "analysis": "第一空是类外定义构造函数，第二空定义对象s并初始化。",
+      "codeLines": [
+        "class Sample{",
+        "    private:",
+        "    int x,y;",
+        "    public:",
+        "    Sample(int a,int b);",
+        "    void display(){",
+        "        cout<<\"x=\"<<x<<\", y=\"<<y<<endl;",
+        "    }",
+        "};",
+        "____(1)(int a,int b){",
+        "    x=a;",
+        "    y=b;",
+        "}",
+        "int main(){",
+        "    Sample ____(2);",
+        "    Sample *p=&s;",
+        "    p->display();",
+        "    return 0;",
+        "}"
+      ]
     },
     {
       "id": "202304-38",
       "paper": "2023-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "友元函数访问对象，输出结果2023/4/1和2023/10/1。class Date{ public: Date(int y,int m,int d){ year=y; month=m; day=d; } ____(1)(Date &); private:int year,month,day; }; void Print(Date &d){ cout<<d.year<<'/'<<d.month<<'/'<<d.day<<endl; } int main(){ Date d1(2023,4,1), ____(2); Print(d1); Print(d2); return 0; }",
+      "stem": "友元函数访问对象，输出结果2023/4/1和2023/10/1。",
       "answer": [
         "friend void Print",
         "d2(2023,10,1)"
       ],
-      "analysis": "第一空声明友元函数Print，第二空定义d2并初始化。"
+      "analysis": "第一空声明友元函数Print，第二空定义d2并初始化。",
+      "codeLines": [
+        "class Date{",
+        "    public:",
+        "    Date(int y,int m,int d){",
+        "        year=y;",
+        "        month=m;",
+        "        day=d;",
+        "    }",
+        "    ____(1)(Date &);",
+        "    private:",
+        "    int year,month,day;",
+        "};",
+        "void Print(Date &d){",
+        "    cout<<d.year<<'/'<<d.month<<'/'<<d.day<<endl;",
+        "}",
+        "int main(){",
+        "    Date d1(2023,4,1), ____(2);",
+        "    Print(d1);",
+        "    Print(d2);",
+        "    return 0;",
+        "}"
+      ]
     },
     {
       "id": "202304-39",
       "paper": "2023-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "为类Position重载运算符+，从而实现Position对象的加法操作。class Position{ int x,y; public: Position(int px,int py){x=px;y=py;} ____(1)(const Position &p){ return ____(2); } };",
+      "stem": "为类Position重载运算符+，从而实现Position对象的加法操作。",
       "answer": [
         "Position operator+",
         "Position(x+p.x, y+p.y)"
       ],
-      "analysis": "第一空重载+运算符，第二空返回新的Position对象。"
+      "analysis": "第一空重载+运算符，第二空返回新的Position对象。",
+      "codeLines": [
+        "class Position{",
+        "    int x,y;",
+        "    public:",
+        "    Position(int px,int py){",
+        "        x=px;",
+        "        y=py;",
+        "    }",
+        "    ____(1)(const Position &p){",
+        "        return ____(2);",
+        "    }",
+        "};"
+      ]
     },
     {
       "id": "202304-40",
       "paper": "2023-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "D1定义一个派生类D2，在D2中重写函数pvf()，创建一个D2类的对象调用函数f()、vf()、pvf()。class B1{ public: virtual void vf(){cout<<\"B1::vf()\"<<endl;} void f(){cout<<\"B1::f()\"<<endl;} virtual void pvf()=0; }; class D1: public B1{ public: virtual void vf(){cout<<\"D1::vf()\"<<endl;} void f(){cout<<\"D1::f()\"<<endl;} }; class ____(1){ public: virtual void pvf(){cout<<\"D2::pvf()\"<<endl;} }; int main(){ D2 d2; d2.f(); ____(2); d2.pvf(); return 0; }",
+      "stem": "D1定义一个派生类D2，在D2中重写函数pvf()，创建一个D2类的对象调用函数f()、vf()、pvf()。",
       "answer": [
         "D2: public D1",
         "d2.vf();"
       ],
-      "analysis": "D2从D1派生并实现纯虚函数pvf，main中调用vf。"
+      "analysis": "D2从D1派生并实现纯虚函数pvf，main中调用vf。",
+      "codeLines": [
+        "class B1{",
+        "    public:",
+        "    virtual void vf(){",
+        "        cout<<\"B1::vf()\"<<endl;",
+        "    }",
+        "    void f(){",
+        "        cout<<\"B1::f()\"<<endl;",
+        "    }",
+        "    virtual void pvf()=0;",
+        "};",
+        "class D1: public B1{",
+        "    public:",
+        "    virtual void vf(){",
+        "        cout<<\"D1::vf()\"<<endl;",
+        "    }",
+        "    void f(){",
+        "        cout<<\"D1::f()\"<<endl;",
+        "    }",
+        "};",
+        "class ____(1){",
+        "    public:",
+        "    virtual void pvf(){",
+        "        cout<<\"D2::pvf()\"<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    D2 d2;",
+        "    d2.f();",
+        "    ____(2);",
+        "    d2.pvf();",
+        "    return 0;",
+        "}"
+      ]
     },
     {
       "id": "202304-41",

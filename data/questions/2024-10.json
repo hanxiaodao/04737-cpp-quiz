@@ -417,60 +417,165 @@
       "paper": "2024-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出圆面积的数值12.56，请补全：class Circle{ public: int r; double s; ____ return s=3.14*r*r; } }; int main(){ Circle c; c.r=2; ____ cout<<c.s<<endl; }",
+      "stem": "以下程序输出圆面积的数值12.56，请补全",
       "answer": [
         "double area(){",
         "c.area();"
       ],
-      "analysis": "第一空定义求面积函数，第二空调用该函数。"
+      "analysis": "第一空定义求面积函数，第二空调用该函数。",
+      "codeLines": [
+        "class Circle{",
+        "    public:",
+        "    int r;",
+        "    double s;",
+        "    ____",
+        "    return s=3.14*r*r;",
+        "}",
+        "};",
+        "int main(){",
+        "    Circle c;",
+        "    c.r=2;",
+        "    ____",
+        "    cout<<c.s<<endl;",
+        "}"
+      ]
     },
     {
       "id": "202410-32",
       "paper": "2024-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出数值2024，请补全：class INTEGER{ public: INTEGER(int a){ ____ } private: int a; ____ (const INTEGER& obj); }; void Print(const INTEGER &obj){ cout<<obj.a; } int main(){ INTEGER obj(2024); Print(obj); }",
+      "stem": "以下程序输出数值2024，请补全",
       "answer": [
         "this->a=a;",
         "friend void Print"
       ],
-      "analysis": "第一空解决参数与成员同名问题，第二空声明友元函数访问私有成员。"
+      "analysis": "第一空解决参数与成员同名问题，第二空声明友元函数访问私有成员。",
+      "codeLines": [
+        "class INTEGER{",
+        "    public:",
+        "    INTEGER(int a){",
+        "        ____",
+        "    }",
+        "    private:",
+        "    int a;",
+        "    ____ (const INTEGER& obj);",
+        "};",
+        "void Print(const INTEGER &obj){",
+        "    cout<<obj.a;",
+        "}",
+        "int main(){",
+        "    INTEGER obj(2024);",
+        "    Print(obj);",
+        "}"
+      ]
     },
     {
       "id": "202410-33",
       "paper": "2024-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出C++等级成绩：优秀，请补全：class Base{ public: Base(const char *na){ strcpy(s,na); } char s[80]; }; ____ { public: Derived(const char *nm):Base(nm){} void show(); }; void Derived::show(){ cout<<____<<endl; } int main(){ Derived b1(\"优秀\"); b1.show(); }",
+      "stem": "以下程序输出C++等级成绩：优秀，请补全",
       "answer": [
         "class Derived : public Base",
         "\"C++等级成绩：\" << s"
       ],
-      "analysis": "第一空定义Derived公有继承Base，第二空输出前缀和继承来的s。"
+      "analysis": "第一空定义Derived公有继承Base，第二空输出前缀和继承来的s。",
+      "codeLines": [
+        "class Base{",
+        "    public:",
+        "    Base(const char *na){",
+        "        strcpy(s,na);",
+        "    }",
+        "    char s[80];",
+        "};",
+        "____ {",
+        "    public:",
+        "    Derived(const char *nm):Base(nm){",
+        "    }",
+        "    void show();",
+        "};",
+        "void Derived::show(){",
+        "    cout<<____<<endl;",
+        "}",
+        "int main(){",
+        "    Derived b1(\"优秀\");",
+        "    b1.show();",
+        "}"
+      ]
     },
     {
       "id": "202410-34",
       "paper": "2024-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出程序设计100分，请补全：class A{ public: int i; virtual void f1(){ cout<<\"C++\"; } ____ { cout<<\"100分\"; } }; class B: public A{ int j; void f1(){ cout<<\"程序设计\"; } }; int main(){ A *a; B b; ____; a->f1(); a->f2(); }",
+      "stem": "以下程序输出程序设计100分，请补全",
       "answer": [
         "void f2()",
         "a=&b"
       ],
-      "analysis": "第一空定义f2，第二空让基类指针指向派生类对象。"
+      "analysis": "第一空定义f2，第二空让基类指针指向派生类对象。",
+      "codeLines": [
+        "class A{",
+        "    public:",
+        "    int i;",
+        "    virtual void f1(){",
+        "        cout<<\"C++\";",
+        "    }",
+        "    ____ {",
+        "        cout<<\"100分\";",
+        "    }",
+        "};",
+        "class B: public A{",
+        "    int j;",
+        "    void f1(){",
+        "        cout<<\"程序设计\";",
+        "    }",
+        "};",
+        "int main(){",
+        "    A *a;",
+        "    B b;",
+        "    ____;",
+        "    a->f1();",
+        "    a->f2();",
+        "}"
+      ]
     },
     {
       "id": "202410-35",
       "paper": "2024-10",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "以下程序输出相等不相等，请补全：____ class Sample{ T n; public: Sample(T i){ n=i; } int operator==(Sample &); }; template<class T> int Sample<T>::operator==(Sample &s){ if(n==s.n) return 1; else return 0; } int main(){ ____ , s2(1); cout<<(s1==s2?\"相等\":\"不相等\"); Sample<double> s3(2.4), s4(3.5); cout<<(s3==s4?\"相等\":\"不相等\"); }",
+      "stem": "以下程序输出相等不相等，请补全",
       "answer": [
         "template<class T>",
         "Sample<int> s1(1)"
       ],
-      "analysis": "第一空是模板声明，第二空定义int类型对象s1。"
+      "analysis": "第一空是模板声明，第二空定义int类型对象s1。",
+      "codeLines": [
+        "____",
+        "class Sample{",
+        "    T n;",
+        "    public:",
+        "    Sample(T i){",
+        "        n=i;",
+        "    }",
+        "    int operator==(Sample &);",
+        "};",
+        "template<class T>",
+        "int Sample<T>::operator==(Sample &s){",
+        "    if(n==s.n)",
+        "    return 1;",
+        "    else",
+        "    return 0;",
+        "}",
+        "int main(){",
+        "    ____ , s2(1);",
+        "    cout<<(s1==s2?\"相等\":\"不相等\");",
+        "    Sample<double> s3(2.4), s4(3.5);",
+        "    cout<<(s3==s4?\"相等\":\"不相等\");",
+        "}"
+      ]
     },
     {
       "id": "202410-36",

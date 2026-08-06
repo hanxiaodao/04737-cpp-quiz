@@ -417,60 +417,127 @@
       "paper": "2025-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "将程序补充完整，使程序输出的结果为85：class Test{ public: ____ Test(int i=5){ x=i+x; } int Getnum(){ return Test::x+7; } }; ____ ; int main(){ Test test; cout<<test.Getnum()<<endl; }",
+      "stem": "将程序补充完整，使程序输出的结果为85",
       "answer": [
         "static int x;",
         "int Test::x=73;"
       ],
-      "analysis": "x是静态成员，初始为73，默认构造i=5后x=78，Getnum输出85。"
+      "analysis": "x是静态成员，初始为73，默认构造i=5后x=78，Getnum输出85。",
+      "codeLines": [
+        "class Test{",
+        "    public:",
+        "    ____ Test(int i=5){",
+        "        x=i+x;",
+        "    }",
+        "    int Getnum(){",
+        "        return Test::x+7;",
+        "    }",
+        "};",
+        "____ ;",
+        "int main(){",
+        "    Test test;",
+        "    cout<<test.Getnum()<<endl;",
+        "}"
+      ]
     },
     {
       "id": "202504-32",
       "paper": "2025-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "将程序补充完整，使程序输出100,10,1 和 0,5,1：class pointer{ public: int a; int *p; pointer(){ a=100; p=new int(10); } pointer(const pointer &tempp){ if(this != ____) { a=tempp.a; p=____; } } };",
+      "stem": "将程序补充完整，使程序输出100,10,1 和 0,5,1",
       "answer": [
         "&tempp",
         "tempp.p"
       ],
-      "analysis": "拷贝构造采用浅拷贝，使两个指针指向同一块内存。"
+      "analysis": "拷贝构造采用浅拷贝，使两个指针指向同一块内存。",
+      "codeLines": [
+        "class pointer{",
+        "    public:",
+        "    int a;",
+        "    int *p;",
+        "    pointer(){",
+        "        a=100;",
+        "        p=new int(10);",
+        "    }",
+        "    pointer(const pointer &tempp){",
+        "        if(this != ____) {",
+        "            a=tempp.a;",
+        "            p=____;",
+        "        }",
+        "    }",
+        "};"
+      ]
     },
     {
       "id": "202504-33",
       "paper": "2025-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "将程序补充完整，使程序输出Base默认构造函数 D_Base默认构造函数 D_Base析构函数 Base析构函数 Base带2个参数的构造函数 D_Base带3个参数的构造函数 D_Base析构函数 Base析构函数：class D_Base{ private: int price; Base ty; public: D_Base(int p,int tr,int w): ____, ty(tr,w){ cout<<\"D_Base 带3个参数的构造函数\"<<endl; } ____ };",
+      "stem": "将程序补充完整，使程序输出Base默认构造函数 D_Base默认构造函数 D_Base析构函数 Base析构函数 Base带2个参数的构造函数 D_Base带3个参数的构造函数 D_Base析构函数 Base析构函数",
       "answer": [
         "price(p)",
         "~D_Base(){"
       ],
-      "analysis": "第一空初始化price，第二空定义析构函数。"
+      "analysis": "第一空初始化price，第二空定义析构函数。",
+      "codeLines": [
+        "class D_Base{",
+        "    private:",
+        "    int price;",
+        "    Base ty;",
+        "    public:",
+        "    D_Base(int p,int tr,int w): ____, ty(tr,w){",
+        "        cout<<\"D_Base 带3个参数的构造函数\"<<endl;",
+        "    }",
+        "    ____",
+        "};"
+      ]
     },
     {
       "id": "202504-34",
       "paper": "2025-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "将程序补充完整，使程序输出Base::fun() Derived::fun()：class Base{ public: ____ void fun(){ cout<<\"Base::fun()\"<<endl; } }; int main(){ ____; return 0; }",
+      "stem": "将程序补充完整，使程序输出Base::fun() Derived::fun()",
       "answer": [
         "virtual",
         "FunTest();"
       ],
-      "analysis": "第一空可声明虚函数，第二空调用测试函数。"
+      "analysis": "第一空可声明虚函数，第二空调用测试函数。",
+      "codeLines": [
+        "class Base{",
+        "    public:",
+        "    ____",
+        "    void fun(){",
+        "        cout<<\"Base::fun()\"<<endl;",
+        "    }",
+        "};",
+        "int main(){",
+        "    ____;",
+        "    return 0;",
+        "}"
+      ]
     },
     {
       "id": "202504-35",
       "paper": "2025-04",
       "section": "程序填空题",
       "type": "fill_blank",
-      "stem": "完成程序，从输入的字符串中提取电话号码。输入Tel,123456，输出123456：while(!cin.eof()){ cin.ignore(10,','); if(____){ ____ cout<<str<<endl; } }",
+      "stem": "完成程序，从输入的字符串中提取电话号码。输入Tel,123456，输出123456",
       "answer": [
         "cin.getline(str,30)",
         ";"
       ],
-      "analysis": "ignore跳过逗号前内容，getline读取剩余电话号码；第二空可为空语句。"
+      "analysis": "ignore跳过逗号前内容，getline读取剩余电话号码；第二空可为空语句。",
+      "codeLines": [
+        "while(!cin.eof()){",
+        "    cin.ignore(10,',');",
+        "    if(____){",
+        "        ____",
+        "        cout<<str<<endl;",
+        "    }",
+        "}"
+      ]
     },
     {
       "id": "202504-36",
