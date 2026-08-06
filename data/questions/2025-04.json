@@ -548,7 +548,9 @@
       "answer": "35",
       "analysis": "15.0调用double版本得5，15调用int版本得30，总和35。",
       "codeLines": [
-        "class A{ public: int fun(double);",
+        "class A{",
+        "    public:",
+        "    int fun(double);",
         "    int fun(int);",
         "};",
         "int A::fun(double x){",
@@ -616,7 +618,8 @@
       "codeLines": [
         "class exa{",
         "    int a;",
-        "    public: exa(int b=9){",
+        "    public:",
+        "    exa(int b=9){",
         "        a=b++;",
         "    }",
         "    void print(){",
