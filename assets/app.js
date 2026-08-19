@@ -778,7 +778,13 @@
     let html = `
       <div class="card">
         <div class="quiz-head" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-          <div class="muted">第 ${quiz.index + 1} / ${total} 题</div>
+          <div class="muted" style="display:flex;align-items:center;gap:6px;">
+            第
+            <input type="number" id="quiz-jump" class="quiz-jump" min="1" max="${total}" value="${quiz.index + 1}"
+              aria-label="跳转到第几题" style="width:64px;text-align:center;">
+            / ${total} 题
+            <span class="muted" style="font-size:12px;">(输入题号回车跳转)</span>
+          </div>
           <div class="muted">${prog.judged ? (prog.correct ? '已答对' : '已答错') : '未作答'}</div>
         </div>
         ${questionHtml(q, prog)}
@@ -1278,9 +1284,26 @@
     }
   });
 
+  function jumpTo(n) {
+    if (!quiz || !quiz.qids || !quiz.qids.length) return;
+    const total = quiz.qids.length;
+    const idx = parseInt(n, 10);
+    if (isNaN(idx)) return;
+
+    const target = Math.min(Math.max(idx - 1, 0), total - 1);
+    if (target !== quiz.index) {
+      quiz.index = target;
+      saveQuiz();
+    }
+    render();
+  }
+
   view.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' && e.target.id === 'settingsPwd') {
       doUnlockSettings();
+    }
+    if (e.key === 'Enter' && e.target.id === 'quiz-jump') {
+      jumpTo(e.target.value);
     }
   });
 

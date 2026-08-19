@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cpp-quiz-v7';
+const CACHE_NAME = 'cpp-quiz-v8';
 const STATIC_ASSETS = [
   './',
   './index.html',
